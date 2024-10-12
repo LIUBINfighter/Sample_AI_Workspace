@@ -1,0 +1,8 @@
+{
+  "timestampFormat": "YY-MM-DD HH:mm:ss",
+  "editableTimestampFormat": "YYYY-MM-DD HH:mm:ss",
+  "csvDelimiter": ",",
+  "fineGrainedDurations": true,
+  "reverseSegmentOrder": false,
+  "timestampDurations": false
+}

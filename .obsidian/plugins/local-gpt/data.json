@@ -1,0 +1,83 @@
+{
+  "providers": {
+    "ollama": {
+      "ollamaUrl": "http://localhost:11434",
+      "defaultModel": "llama3.1",
+      "type": "ollama",
+      "embeddingModel": "nomic-embed-text"
+    },
+    "ollama_fallback": {
+      "ollamaUrl": "http://localhost:11434",
+      "defaultModel": "llama2-chinese",
+      "type": "ollama",
+      "embeddingModel": ""
+    },
+    "openaiCompatible": {
+      "url": "http://localhost:8080",
+      "apiKey": "",
+      "type": "openaiCompatible",
+      "embeddingModel": ""
+    },
+    "openaiCompatible_fallback": {
+      "url": "http://localhost:8080",
+      "apiKey": "",
+      "type": "openaiCompatible",
+      "embeddingModel": ""
+    }
+  },
+  "defaults": {
+    "provider": "ollama",
+    "fallbackProvider": "ollama_fallback",
+    "creativity": "high"
+  },
+  "actions": [
+    {
+      "name": "📚Flashcard Design",
+      "prompt": "",
+      "model": "",
+      "system": "你好，我需要你使用以下给定的词汇和模板，帮我制作一些文本词汇闪卡。\n每一个单词有需要两个闪卡，格式分别为：\n\nword:::中文释义\n\nrepertoire:::(n.) a collection of skills or accomplishments，一系列技能或成就的集合\n\nExample Sentence with the word\nword\n?\nword:meaning\n\n以下是两个案例：\n\nThe opera singer has an extensive repertoire, including works from Mozart to Puccini.\n- repertoire\n?\nrepertoire:(n.) a collection of skills or accomplishments\n\n请对提供的所有单词都进行相同的闪卡制作。对于多义词，每一种含义视作独立的单词进行两张闪卡的制作。请严格按照格式进行制作，不允许独立的换行，不允许独立的符号的加粗，不允许自己独立的格式，也不要提供其他内容和闪卡之外的回复。",
+      "replace": false
+    },
+    {
+      "name": "😋Add Emoji",
+      "prompt": "",
+      "model": "",
+      "system": "You will react to everything I write by replying with nothing else but a pair of emoji.",
+      "replace": true
+    },
+    {
+      "name": "🤔Translate",
+      "prompt": "You are about to undertake the task of translating the following text from Chinese to English or from  English to Chinese. \n\ndonot reply anything else, just show the translation.",
+      "model": "llama3.1",
+      "system": "We have the following requirements for the quality of the translation:\n\nAccuracy Fluency Professionalism Clarity\nCheck and maintain the format and structure of the original text.\nFor proper nouns, terms, or untranslatable words, please retain the original text or add corresponding footnotes.",
+      "replace": false
+    },
+    {
+      "name": "🪄 General help",
+      "prompt": "",
+      "system": "You are an assistant helping a user write more content in a document based on a prompt. Output in markdown format. Do not use links. Do not include literal content from the original document."
+    },
+    {
+      "name": "✍️ Continue writing",
+      "prompt": "Act as a professional editor with many years of experience as a writer. Carefully finalize the following text, add details, use facts and make sure that the meaning and original style are preserved. Purposely write in detail, with examples, so that your reader is comfortable, even if they don't understand the specifics. Don't use clericalisms, evaluations without proof with facts, passive voice. Use Markdown markup language for formatting. Answer only content and nothing else, no introductory words, only substance. For math, use LaTeX env in text like: since $\\sigma = 1$, we can ... or  $$\\begin{align}I  & = a+b+c // & = a+(b+c) \\end{align}$$",
+      "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can."
+    },
+    {
+      "name": "🍭 Summarize",
+      "prompt": "Make a concise summary of the key points of the following text.",
+      "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can."
+    },
+    {
+      "name": "📖 Fix spelling and grammar",
+      "prompt": "Proofread the below for spelling and grammar.",
+      "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can.",
+      "replace": true
+    },
+    {
+      "name": "✅ Find action items",
+      "prompt": "Act as an assistant helping find action items inside a document. An action item is an extracted task or to-do found inside of an unstructured document. Use Markdown checkbox format: each line starts with \"- [ ] \"",
+      "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can."
+    }
+  ],
+  "_version": 5
+}

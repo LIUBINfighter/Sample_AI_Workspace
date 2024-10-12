@@ -1,0 +1,10 @@
+{
+	"id": "latexocr",
+	"name": "LaTeX-OCR",
+	"version": "1.0.1",
+	"minAppVersion": "0.15.0",
+	"description": "Run LaTeX-OCR if it is installed locally.",
+	"author": "Jack Barker",
+	"authorUrl": "https://github.com/JackBarker7",
+	"isDesktopOnly": true
+}

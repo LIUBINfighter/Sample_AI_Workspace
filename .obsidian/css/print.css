@@ -1,0 +1,59 @@
+/* 文件名可以命名为 print.css */
+@media print {
+
+	/* 页边距 */
+	@page {
+	margin: 0.3in;
+	}
+	
+	body, p, li{
+	/* 行间距 */
+	line-height: 1.8;
+	/* 字体 */
+	font-family: Avenir next, -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+	/* 段后间距 */
+	padding-bottom: 3px;
+	}
+	
+	/* callouts行间距 */
+	div.callout-title-inner{
+	line-height: 1.8;
+	}
+	
+	/* 首行缩进 */
+	p{
+	text-indent: 2em;
+	}
+	
+	/* 标题居中 */
+	h1,h2{
+	text-align: center;
+	}
+	
+	/* 标题防页面截断、标题段落间距 */
+	h1, h2, h3, h4, h5, h6 {
+	page-break-after: avoid;
+	padding: 8px 0 ;
+	}
+	  
+	img {
+	display:block;
+	margin: 1em 0
+	}
+	
+	a img {
+	border: none
+	}
+	
+	/* 表格居中 */
+	table {
+	margin: 1px;
+	width: 100%;
+	border-collapse: collapse;
+	}
+	
+	/* 表格文字居中 */
+	table,tr,th,td{
+	text-align: center !important;
+	}
+}

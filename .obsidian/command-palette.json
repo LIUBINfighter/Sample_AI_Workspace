@@ -1,0 +1,7 @@
+{
+  "pinned": [
+    "workspace:export-pdf",
+    "break-page:insert-break-page",
+    "local-gpt:context-menu"
+  ]
+}

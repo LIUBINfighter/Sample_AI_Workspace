@@ -1,0 +1,21 @@
+{
+  "floating-toc-styles@@toggle-floating-toc-header-color": true,
+  "floating-toc-styles@@floating-toc-color-h1@@light": "#18A058",
+  "floating-toc-styles@@floating-toc-color-h1@@dark": "#18A058",
+  "floating-toc-styles@@floating-toc-color-h2@@light": "#FFDF00",
+  "floating-toc-styles@@floating-toc-color-h2@@dark": "#FFDF00",
+  "floating-toc-styles@@floating-toc-font-size": 1.4,
+  "floating-toc-styles@@enable-heading-nowrap": true,
+  "floating-toc-styles@@enable-background-blur-dept": false,
+  "floating-toc-styles@@floating-toc-line-height": 2.2,
+  "floating-toc-styles@@floating-toc-color-h3@@light": "#07EB23",
+  "floating-toc-styles@@floating-toc-color-h3@@dark": "#07EB23",
+  "floating-toc-styles@@floating-toc-color-h4@@light": "#2D8FF0",
+  "floating-toc-styles@@floating-toc-color-h4@@dark": "#2D8FF0",
+  "floating-toc-styles@@floating-toc-color-h5@@light": "#BC01E2",
+  "floating-toc-styles@@floating-toc-color-h5@@dark": "#BC01E2",
+  "floating-toc-styles@@indicator-bar-position": 3,
+  "floating-toc-styles@@enable-bar-heading-text": true,
+  "floating-toc-styles@@enable-outline-style": "default-outline-style",
+  "floating-toc-styles@@floating-toc-line-width": 16
+}

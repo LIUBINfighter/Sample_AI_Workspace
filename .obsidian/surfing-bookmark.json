@@ -1,0 +1,36 @@
+{
+  "bookmarks": [
+    {
+      "id": "1968604199",
+      "name": "七大管理工具介绍：SWOT分析法、5W2H分析法、SMART原则、WBS工作分解结构、PDCA循环、时间管理、二八原则",
+      "url": "https://mp.weixin.qq.com/s/U1PLJIhqtgCbbBolN-UPqg",
+      "description": "",
+      "category": [
+        "ROOT"
+      ],
+      "tags": "",
+      "created": 1728633169029,
+      "modified": 1728633169029
+    },
+    {
+      "id": "2014068036",
+      "name": "Obsidian",
+      "url": "https://obsidian.md/",
+      "description": "A awesome note-taking tool",
+      "category": [
+        "ROOT"
+      ],
+      "tags": "",
+      "created": 1672840861051,
+      "modified": 1672840861052
+    }
+  ],
+  "categories": [
+    {
+      "value": "ROOT",
+      "text": "ROOT",
+      "label": "ROOT",
+      "children": []
+    }
+  ]
+}

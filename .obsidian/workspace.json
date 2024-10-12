@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "3c01e7cfa75add25",
+    "type": "split",
+    "children": [
+      {
+        "id": "ddee2643d9a551ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6ceca00feea81f6",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "未命名看板.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "63bfc1882f09971d",
+    "type": "split",
+    "children": [
+      {
+        "id": "08f024800deb1fd8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4d0e98caad1d6ae",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "97c98722ff0c6096",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "cfa3b547f0ab7acb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "a79a74ed68262ff8",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 245.49999618530273
+  },
+  "right": {
+    "id": "abbdd87168af714f",
+    "type": "split",
+    "children": [
+      {
+        "id": "203df425f2068a47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af3ee11f86dae9da",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "44812c6b2b7a6aca",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "未命名看板.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "291129c04929e145",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "b632878de0dd5cfc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "未命名看板.md"
+              }
+            }
+          },
+          {
+            "id": "c3ba7b72eec719f3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 598.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "workspaces:管理工作区布局": true,
+      "switcher:打开快速切换": true,
+      "canvas:新建白板": false,
+      "templates:插入模板": true,
+      "command-palette:打开命令面板": true,
+      "random-note:开始漫游笔记": true,
+      "audio-recorder:开始/结束录音": true,
+      "chronology:Open Chronology": false,
+      "smart-second-brain:打开 S2B 聊天": false,
+      "graph:查看关系图谱": false,
+      "vault-size-history:Vault size history": false,
+      "obsidian-kanban:创建新看板": false
+    }
+  },
+  "active": "f4d0e98caad1d6ae",
+  "lastOpenFiles": [
+    "新建文件夹",
+    "git.ignore",
+    "gitignore.md",
+    "新建 文本文档.txt",
+    "README.md",
+    "Sample_AI_Workspace/README.md",
+    "Sample_AI_Workspace",
+    "未命名看板.md",
+    "_总面板.md",
+    "_Course 24 Fall/EBA203 管理信息系统/AI Term Project/~$ Term Project_An Individual Assignment(1)(1).docx",
+    "__PoliAI/📚💭工作区跳转.md",
+    "SD绘画-OC设计.md",
+    "_Course 24 Fall/EBA203 管理信息系统/EBA203 管理信息系统.md",
+    "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权入门.md",
+    "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权期货及其他衍生产品第9版 (赫尔) (Z-Library).pdf",
+    "_Course 24 Fall/FIN205 金融与创业前沿论坛/金融与创业前沿论坛.md",
+    "Z_Attachments/科技企业评估模型 王树勋 2024-10.pdf",
+    "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权期货及其他衍生产品第9版 (赫尔) (Z-Library).pdf.fdmdownload",
+    "Plugins/Chats/Derivatives Introduction.md",
+    "Z_Attachments/资产定价模型.png",
+    "Z_Attachments/课程考核方法.png",
+    "Z_Attachments/详解INFP从敏感忧郁到成熟强大的性格发展过程.md",
+    "_Course 24 Fall/EAP Vocabulary Quiz 1 in Week 6.md",
+    "_Daily_Writing/2024-10-12-星期六.md",
+    "_Health/🍴📝饮食记录.md",
+    "__PoliAI/Singapore/新加坡人力资源部 工签.canvas",
+    "_Course 24 Fall/个人作业 10分 Plagiarim reflection paper.md",
+    "_Course 24 Fall/EAP 学术英语写作/week 5 Assignment/~$agiarim reflction(Liu Huajie)-Class 8.docx",
+    "_Course 24 Fall/EAP 学术英语写作/week 5 Assignment/Plagiarim reflction(Liu Huajie)-Class 8.docx",
+    "_Course 24 Fall/EAP 学术英语写作/week 5 Assignment/~WRL2674.tmp",
+    "__PoliAI/Assignment 1.md",
+    "盯盘.md",
+    "Z_Attachments/2024-10-11-22-51盯盘1.png",
+    "Z_Attachments/image3.png",
+    "Z_Attachments/image.png",
+    "__PoliAI/Meeting Memo/Oct 11 周五晚会议.md",
+    "_Daily_Writing/2024-10-11-星期五.md",
+    "Confidential 个人信息.md",
+    "Public 个人信息.md",
+    "__Workflow/Obsidian/TOC 目录插件.md",
+    "__Workflow/日常行为动线.md",
+    "Template/南科大VS字体配色.md",
+    "Z_Attachments/大二秋课表最终最终版-真的不会再改了 饮食视图.png",
+    "_Bussiness_Trading/线性代数习题册项目分析.canvas",
+    "Z_Attachments/附件1 课程群截图.jpg",
+    "__PoliAI/构思场景.canvas",
+    "__Workflow/Obsidian/AI.canvas",
+    "Z_Attachments/大二秋课表最终最终版-真的不会再改了.png",
+    "Z_Attachments/参考书目.png",
+    "_Workflow/AI.canvas",
+    "Z_Attachments/小组分工情况.png",
+    "_Investment/EliMiller_BTC屠龙技/Sep 4 Miller BTC 第六篇.canvas",
+    "_Projects/选课参考/课程关系网络-商学院大数据管理与应用专业.canvas",
+    "_Investment/EliMiller_BTC屠龙技/Jul 28 Miller 复习一二篇.canvas",
+    "_Investment/EliMiller_BTC屠龙技/Jul 26 Miller BTC 第二篇.canvas",
+    "_Investment/EliMiller_BTC屠龙技/Jul 27 Miller BTC 第二篇 续.canvas"
+  ]
+}
