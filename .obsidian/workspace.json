@@ -17,6 +17,7 @@
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
+                    false,
                     false
                   ]
                 }
@@ -172,8 +173,11 @@
   },
   "active": "d6ceca00feea81f6",
   "lastOpenFiles": [
-    "README.md",
+    "Git packup.md",
     "AI Project.md",
+    "Smart2Brain.md",
+    "Local GPT.md",
+    "README.md",
     "新建文件夹",
     "git.ignore",
     "gitignore.md",
@@ -211,8 +215,6 @@
     "Confidential 个人信息.md",
     "Public 个人信息.md",
     "__Workflow/Obsidian/TOC 目录插件.md",
-    "__Workflow/日常行为动线.md",
-    "Template/南科大VS字体配色.md",
     "Z_Attachments/大二秋课表最终最终版-真的不会再改了 饮食视图.png",
     "_Bussiness_Trading/线性代数习题册项目分析.canvas",
     "Z_Attachments/附件1 课程群截图.jpg",
