@@ -13,7 +13,7 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "未命名看板.md",
+                "file": "AI Project.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名看板.md",
+                "file": "AI Project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名看板.md"
+                "file": "AI Project.md"
               }
             }
           },
@@ -170,16 +170,16 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "f4d0e98caad1d6ae",
+  "active": "d6ceca00feea81f6",
   "lastOpenFiles": [
+    "README.md",
+    "AI Project.md",
     "新建文件夹",
     "git.ignore",
     "gitignore.md",
     "新建 文本文档.txt",
-    "README.md",
     "Sample_AI_Workspace/README.md",
     "Sample_AI_Workspace",
-    "未命名看板.md",
     "_总面板.md",
     "_Course 24 Fall/EBA203 管理信息系统/AI Term Project/~$ Term Project_An Individual Assignment(1)(1).docx",
     "__PoliAI/📚💭工作区跳转.md",
@@ -201,7 +201,6 @@
     "_Course 24 Fall/个人作业 10分 Plagiarim reflection paper.md",
     "_Course 24 Fall/EAP 学术英语写作/week 5 Assignment/~$agiarim reflction(Liu Huajie)-Class 8.docx",
     "_Course 24 Fall/EAP 学术英语写作/week 5 Assignment/Plagiarim reflction(Liu Huajie)-Class 8.docx",
-    "_Course 24 Fall/EAP 学术英语写作/week 5 Assignment/~WRL2674.tmp",
     "__PoliAI/Assignment 1.md",
     "盯盘.md",
     "Z_Attachments/2024-10-11-22-51盯盘1.png",
