@@ -13,8 +13,7 @@ kanban-plugin: board
 ## Infrastructure
 
 - [ ] [[Git packup]]
-- [ ] [[  
-	Typesetting]]
+- [ ] [[CSS & Typesetting]]
 
 
 

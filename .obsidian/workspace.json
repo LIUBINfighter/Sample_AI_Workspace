@@ -13,7 +13,7 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "AI Project.md",
+                "file": "About/AI Project View.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI Project.md",
+                "file": "About/AI Project View.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI Project.md"
+                "file": "About/AI Project View.md"
               }
             }
           },
@@ -173,10 +173,12 @@
   },
   "active": "d6ceca00feea81f6",
   "lastOpenFiles": [
-    "Git packup.md",
-    "AI Project.md",
-    "Smart2Brain.md",
-    "Local GPT.md",
+    "About",
+    "About/CSS & Typesetting.md",
+    "About/AI Project View.md",
+    "About/Git packup.md",
+    "About/Smart2Brain.md",
+    "About/Local GPT.md",
     "README.md",
     "新建文件夹",
     "git.ignore",
@@ -213,8 +215,6 @@
     "__PoliAI/Meeting Memo/Oct 11 周五晚会议.md",
     "_Daily_Writing/2024-10-11-星期五.md",
     "Confidential 个人信息.md",
-    "Public 个人信息.md",
-    "__Workflow/Obsidian/TOC 目录插件.md",
     "Z_Attachments/大二秋课表最终最终版-真的不会再改了 饮食视图.png",
     "_Bussiness_Trading/线性代数习题册项目分析.canvas",
     "Z_Attachments/附件1 课程群截图.jpg",
