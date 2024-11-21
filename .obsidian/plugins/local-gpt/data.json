@@ -1,25 +1,25 @@
 {
   "providers": {
     "ollama": {
-      "ollamaUrl": "http://localhost:11434",
       "defaultModel": "llama3.1",
       "type": "ollama",
-      "embeddingModel": "nomic-embed-text"
+      "embeddingModel": "nomic-embed-text",
+      "url": "http://localhost:11434"
     },
     "ollama_fallback": {
-      "ollamaUrl": "http://localhost:11434",
       "defaultModel": "llama2-chinese",
       "type": "ollama",
-      "embeddingModel": ""
+      "embeddingModel": "",
+      "url": "http://localhost:11434"
     },
     "openaiCompatible": {
-      "url": "http://localhost:8080",
+      "url": "http://localhost:8080/v1",
       "apiKey": "",
       "type": "openaiCompatible",
       "embeddingModel": ""
     },
     "openaiCompatible_fallback": {
-      "url": "http://localhost:8080",
+      "url": "http://localhost:8080/v1",
       "apiKey": "",
       "type": "openaiCompatible",
       "embeddingModel": ""
@@ -79,5 +79,5 @@
       "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can."
     }
   ],
-  "_version": 5
+  "_version": 6
 }

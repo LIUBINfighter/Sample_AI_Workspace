@@ -1284,25 +1284,25 @@ var import_obsidian5 = require("obsidian");
 var DEFAULT_SETTINGS = {
   providers: {
     ollama: {
-      ollamaUrl: "http://localhost:11434",
+      url: "http://localhost:11434",
       defaultModel: "gemma2",
       embeddingModel: "",
       type: "ollama"
     },
     ollama_fallback: {
-      ollamaUrl: "http://localhost:11434",
+      url: "http://localhost:11434",
       defaultModel: "gemma2",
       embeddingModel: "",
       type: "ollama"
     },
     openaiCompatible: {
-      url: "http://localhost:8080",
+      url: "http://localhost:8080/v1",
       apiKey: "",
       embeddingModel: "",
       type: "openaiCompatible"
     },
     openaiCompatible_fallback: {
-      url: "http://localhost:8080",
+      url: "http://localhost:8080/v1",
       apiKey: "",
       embeddingModel: "",
       type: "openaiCompatible"
@@ -1355,7 +1355,7 @@ Include instructions on the appropriate style and tone (e.g., formal, casual, te
 ANSWER PROMPT AND NOTHING ELSE!`
     }
   ],
-  _version: 5
+  _version: 6
 };
 var CREATIVITY = {
   "": {
@@ -1671,7 +1671,7 @@ var MODEL_INFO_CACHE = /* @__PURE__ */ new Map();
 var OllamaAIProvider = class {
   constructor(config) {
     this.defaultModel = config.defaultModel;
-    this.ollamaUrl = config.ollamaUrl;
+    this.url = config.url;
     this.embeddingModel = config.embeddingModel;
     this.onUpdate = config.onUpdate;
     this.abortController = config.abortController;
@@ -1705,17 +1705,29 @@ var OllamaAIProvider = class {
       lastContextLength,
       bodyLengthInTokens
     });
-    if (contextLength > 0 && requestBody.options && bodyLengthInTokens > lastContextLength) {
-      requestBody.options.num_ctx = Math.min(
-        contextLength,
-        bodyLengthInTokens * 1.2
-      );
+    if (contextLength > 0 && requestBody.options) {
+      if (bodyLengthInTokens > lastContextLength) {
+        requestBody.options.num_ctx = Math.min(
+          contextLength,
+          Math.round(bodyLengthInTokens * 1.2)
+        );
+      } else if (bodyLengthInTokens < lastContextLength * 0.5) {
+        requestBody.options.num_ctx = Math.min(
+          contextLength,
+          Math.round(bodyLengthInTokens * 1.2)
+        );
+      } else {
+        requestBody.options.num_ctx = Math.min(
+          contextLength,
+          lastContextLength
+        );
+      }
       this.setModelInfoLastContextLength(
         requestBody.model,
         requestBody.options.num_ctx
       );
     }
-    const url = `${this.ollamaUrl.replace(/\/+$/i, "")}/api/generate`;
+    const url = `${this.url.replace(/\/+$/i, "")}/api/generate`;
     return new Promise((resolve, reject) => {
       if (this.abortController.signal.aborted) {
         return reject();
@@ -1844,7 +1856,7 @@ var OllamaAIProvider = class {
       }
       logger.table("Ollama embeddings request", group);
       const { json } = await (0, import_obsidian2.requestUrl)({
-        url: `${this.ollamaUrl.replace(/\/+$/i, "")}/api/embed`,
+        url: `${this.url.replace(/\/+$/i, "")}/api/embed`,
         method: "POST",
         body: JSON.stringify(body)
       });
@@ -1861,7 +1873,7 @@ var OllamaAIProvider = class {
       return MODEL_INFO_CACHE.get(modelName);
     }
     const { json } = await (0, import_obsidian2.requestUrl)({
-      url: `${this.ollamaUrl.replace(/\/+$/i, "")}/api/show`,
+      url: `${this.url.replace(/\/+$/i, "")}/api/show`,
       method: "POST",
       body: JSON.stringify({ model: modelName })
     });
@@ -1882,7 +1894,7 @@ var OllamaAIProvider = class {
   static async getModels(providerConfig) {
     logger.debug("Fetching Ollama models");
     const { json } = await (0, import_obsidian2.requestUrl)({
-      url: `${providerConfig.ollamaUrl.replace(/\/+$/i, "")}/api/tags`
+      url: `${providerConfig.url.replace(/\/+$/i, "")}/api/tags`
     });
     if (!json.models || json.models.length === 0) {
       logger.warn("No Ollama models found");
@@ -1953,7 +1965,7 @@ var OpenAICompatibleAIProvider = class {
       temperature: options.temperature,
       messages
     };
-    const url = `${this.url.replace(/\/+$/i, "")}/v1/chat/completions`;
+    const url = `${this.url.replace(/\/+$/i, "")}/chat/completions`;
     return new Promise((resolve, reject) => {
       if (this.abortController.signal.aborted) {
         return reject();
@@ -2033,9 +2045,16 @@ var OpenAICompatibleAIProvider = class {
       }
       try {
         logger.table("OpenAI-like embeddings request", text);
+        const headers = {
+          "Content-Type": "application/json"
+        };
+        if (this.apiKey) {
+          headers["Authorization"] = `Bearer ${this.apiKey}`;
+        }
         const { json } = await (0, import_obsidian3.requestUrl)({
-          url: `${this.url.replace(/\/+$/i, "")}/v1/embeddings`,
+          url: `${this.url.replace(/\/+$/i, "")}/embeddings`,
           method: "POST",
+          headers,
           body: JSON.stringify({
             input: [text],
             model: this.embeddingModel
@@ -2057,7 +2076,7 @@ var OpenAICompatibleAIProvider = class {
   static async getModels(providerConfig) {
     logger.debug("Fetching OpenAI Compatible models");
     const { json } = await (0, import_obsidian3.requestUrl)({
-      url: `${providerConfig.url.replace(/\/+$/i, "")}/v1/models`,
+      url: `${providerConfig.url.replace(/\/+$/i, "")}/models`,
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${providerConfig.apiKey}`
@@ -29243,10 +29262,14 @@ var FileCache = class {
   async init(vaultId) {
     this.vaultId = vaultId;
     const dbName = `LocalGPTCache/${this.vaultId}`;
-    this.db = await openDB(dbName, 1, {
-      upgrade(db) {
-        db.createObjectStore("embeddings");
-        db.createObjectStore("content");
+    this.db = await openDB(dbName, 2, {
+      upgrade(db, oldVersion, newVersion) {
+        if (oldVersion < 1) {
+          db.createObjectStore("embeddings");
+        }
+        if (oldVersion < 2) {
+          db.createObjectStore("content");
+        }
       }
     });
   }
@@ -29506,7 +29529,7 @@ async function queryVectorStore(query, vectorStore) {
   const MAX_SEARCH_RESULTS = 10;
   const HIGH_SCORE_THRESHOLD = 0.51;
   const MAX_LOW_SCORE_RESULTS = 5;
-  const MAX_CONTEXT_LENGTH = 7e3;
+  const MAX_CONTEXT_LENGTH = 1e4;
   logger.time("Querying vector store timer");
   const results = await vectorStore.similaritySearchWithScore(
     query,
@@ -29675,17 +29698,18 @@ var LocalGPTSettingTab = class extends import_obsidian5.PluginSettingTab {
       })
     );
     if (selectedProviderConfig.type === "ollama" /* OLLAMA */) {
-      new import_obsidian5.Setting(containerEl).setName("Ollama URL").setDesc("Default is http://localhost:11434").addText(
-        (text) => text.setPlaceholder("http://localhost:11434").setValue(selectedProviderConfig.ollamaUrl).onChange(async (value) => {
-          selectedProviderConfig.ollamaUrl = value;
+      const ollamaUrl = new import_obsidian5.Setting(containerEl).setName("Ollama URL").setDesc("").addText(
+        (text) => text.setPlaceholder("http://localhost:11434").setValue(selectedProviderConfig.url).onChange(async (value) => {
+          selectedProviderConfig.url = value;
           await this.plugin.saveSettings();
         })
       );
+      ollamaUrl.descEl.innerHTML = `Default is <code title="Click to copy" onclick="navigator.clipboard.writeText('http://localhost:11434')">http://localhost:11434</code>`;
       const ollamaDefaultModel = new import_obsidian5.Setting(containerEl).setName("Default model").setDesc("Name of the default Ollama model to use in prompts");
       const ollamaEmbeddingModel = new import_obsidian5.Setting(containerEl).setName("Embedding model").setDesc(
         "Optional. Name of the Ollama embedding model to use for Enhanced Actions"
       );
-      if (selectedProviderConfig.ollamaUrl) {
+      if (selectedProviderConfig.type === "ollama" /* OLLAMA */) {
         OllamaAIProvider.getModels(selectedProviderConfig).then((models) => {
           this.modelsOptions = models;
           ollamaDefaultModel.addDropdown(
@@ -29714,7 +29738,7 @@ var LocalGPTSettingTab = class extends import_obsidian5.PluginSettingTab {
             })
           );
         }).catch(() => {
-          ollamaDefaultModel.descEl.innerHTML = `Get the models from <a href="https://ollama.ai/library">Ollama library</a> or check that Ollama URL is correct.`;
+          ollamaDefaultModel.descEl.innerHTML = `Get the models from <a href="https://ollama.com/library">Ollama library</a> or check that Ollama URL is correct.`;
           ollamaDefaultModel.addButton(
             (button) => button.setIcon("refresh-cw").onClick(async () => {
               this.display();
@@ -29725,22 +29749,22 @@ var LocalGPTSettingTab = class extends import_obsidian5.PluginSettingTab {
     }
     if (selectedProviderConfig.type === "openaiCompatible" /* OPENAI_COMPATIBLE */) {
       const openAICompatible = new import_obsidian5.Setting(containerEl).setName("OpenAI compatible server URL").setDesc("").addText(
-        (text) => text.setPlaceholder("http://localhost:8080").setValue(selectedProviderConfig.url).onChange(async (value) => {
+        (text) => text.setPlaceholder("http://localhost:8080/v1").setValue(selectedProviderConfig.url).onChange(async (value) => {
           selectedProviderConfig.url = value;
           await this.plugin.saveSettings();
         })
       );
       openAICompatible.descEl.innerHTML = `
+				Put the URL in the format <code>http://localhost:8080/v1</code><br/>
+				<br/>
 				There are several options to run local OpenAI-like server:
 				<ul>
-					<li><a href="https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md">llama.cpp</a></li>
-					<li><a href="https://github.com/abetlen/llama-cpp-python#openai-compatible-web-server">llama-cpp-python</a></li>
-					<li><a href="https://localai.io/model-compatibility/llama-cpp/#setup">LocalAI</a></li>
+					<li><a href="https://docs.openwebui.com/tutorials/integrations/continue-dev/">Open WebUI</a></li>
 					<li>Obabooga <a href="https://github.com/pfrankov/obsidian-local-gpt/discussions/8">Text generation web UI</a></li>
 					<li><a href="https://lmstudio.ai/">LM Studio</a></li>
 				</ul>
 				After all installation and configuration make sure that you're using compatible model.<br/>
-				For llama.cpp it is necessary to use models in ChatML format (e.g. <a href="https://huggingface.co/TheBloke/Orca-2-7B-GGUF/blob/main/orca-2-7b.Q4_K_M.gguf">Orca 2</a>)
+				It is necessary to use models in ChatML format.
 			`;
       const apiKey = new import_obsidian5.Setting(containerEl).setName("API key").setDesc("").addText(
         (text) => text.setPlaceholder("").setValue(selectedProviderConfig.apiKey).onChange(async (value) => {
@@ -30207,9 +30231,9 @@ var LocalGPT = class extends import_obsidian6.Plugin {
   }
   async onload() {
     await this.loadSettings();
-    await fileCache.init(this.app.appId);
     this.reload();
     this.app.workspace.onLayoutReady(async () => {
+      await fileCache.init(this.app.appId);
       window.setTimeout(() => {
         this.checkUpdates();
       }, 5e3);
@@ -30301,10 +30325,10 @@ var LocalGPT = class extends import_obsidian6.Plugin {
         }
         case "ollama" /* OLLAMA */:
         default: {
-          const { ollamaUrl, defaultModel, embeddingModel } = this.settings.providers[providerName];
+          const { url, defaultModel, embeddingModel } = this.settings.providers[providerName];
           return new OllamaAIProvider({
             defaultModel,
-            ollamaUrl,
+            url,
             embeddingModel,
             abortController,
             onUpdate
@@ -30525,6 +30549,23 @@ Check the Settings!`,
           );
         }, 1e4);
       }
+      if (loadedData._version < 6) {
+        needToSave = true;
+        Object.keys(DEFAULT_SETTINGS.providers).forEach((provider) => {
+          if (loadedData.providers[provider] && loadedData.providers[provider].type === "ollama" /* OLLAMA */) {
+            loadedData.providers[provider].url = // @ts-ignore
+            loadedData.providers[provider].ollamaUrl;
+            delete loadedData.providers[provider].ollamaUrl;
+          }
+          if (loadedData.providers[provider] && loadedData.providers[provider].type === "openaiCompatible" /* OPENAI_COMPATIBLE */) {
+            loadedData.providers[provider].url = loadedData.providers[provider].url.replace(
+              /\/+$/i,
+              ""
+            ) + "/v1";
+          }
+        });
+        loadedData._version = 6;
+      }
       Object.keys(DEFAULT_SETTINGS.providers).forEach((key) => {
         if (loadedData.providers[key]) {
           return;
@@ -30645,3 +30686,5 @@ Check the Settings!`,
    * MIT license
    *)
 */
+
+/* nosourcemap */
