@@ -1,4 +1,6 @@
 .trash
 .obsidian\plugins\copilot\data.json
-.Chats
+Chats
 copilot-conversations
+.Chats
+.copilot-conversations

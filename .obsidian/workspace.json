@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/BaseLLM/Kimi.md",
+                "file": "About/Plugins/Surfing.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kimi"
+              "title": "Surfing"
             }
           }
         ],
@@ -222,22 +222,23 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "f4d0e98caad1d6ae",
+  "active": "aa3cbc489200ac21",
   "lastOpenFiles": [
-    "About/BaseLLM/Ollama.md",
+    "About/Plugins/未命名.md",
+    "About/Plugins/Surfing.md",
+    "About/Plugins/Smart2Brain.md",
+    "About/Plugins/Local GPT.md",
+    "About/Plugins/Kanban.md",
+    "About/Plugins/Git packup.md",
+    "About/Plugins/Copilot.md",
     "About/BaseLLM/Kimi.md",
+    "About/BaseLLM/Ollama.md",
     "attachments/Kimi_API_keys获取.png",
     "attachments",
     "copilot-conversations/Untitled_Chat@20241121_193449.md",
     "copilot-conversations",
-    "About/Plugins/Kanban.md",
     "AI Project View.md",
-    "About/Plugins/Surfing.md",
     "Chats/New Chat.md",
-    "About/Plugins/Copilot.md",
-    "About/Plugins/Local GPT.md",
-    "About/Plugins/Git packup.md",
-    "About/Plugins/Smart2Brain.md",
     "README.md",
     "About/Plugins",
     "About/BaseLLM",
