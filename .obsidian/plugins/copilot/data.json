@@ -12,7 +12,7 @@
   "googleApiKey": "",
   "openRouterAiApiKey": "",
   "defaultChainType": "vault_qa",
-  "defaultModelKey": "lgkt/llama3-chinese-alpaca|ollama",
+  "defaultModelKey": "moonshot-v1-8k|3rd party (openai-format)",
   "embeddingModelKey": "nomic-embed-text|ollama",
   "temperature": 0.05,
   "maxTokens": 4000,
@@ -24,6 +24,7 @@
   "defaultSaveFolder": "copilot-conversations",
   "defaultConversationTag": "copilot-conversation",
   "autosaveChat": true,
+  "defaultOpenArea": "view",
   "customPromptsFolder": "copilot-conversations/copilot-custom-prompts",
   "indexVaultToVectorStore": "ON MODE SWITCH",
   "qaExclusions": "attachments, Plugins, Chats, copilot-conversations",
@@ -146,6 +147,16 @@
       "isBuiltIn": false,
       "enableCors": false,
       "isEmbeddingModel": false
+    },
+    {
+      "name": "moonshot-v1-8k",
+      "provider": "3rd party (openai-format)",
+      "baseUrl": "https://api.moonshot.cn",
+      "apiKey": "",
+      "enabled": true,
+      "isBuiltIn": false,
+      "enableCors": false,
+      "isEmbeddingModel": false
     }
   ],
   "activeEmbeddingModels": [
@@ -207,6 +218,7 @@
     }
   ],
   "embeddingRequestsPerSecond": 30,
+  "disableIndexOnMobile": false,
   "enabledCommands": {
     "fix-grammar-prompt": {
       "enabled": true,

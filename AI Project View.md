@@ -18,6 +18,7 @@ kanban-plugin: board
 - [ ] [[Git packup]]
 - [ ] [[CSS & Typesetting]]
 - [ ] [[Surfing]]
+- [ ] 看板插件：[[Kanban]]
 
 
 

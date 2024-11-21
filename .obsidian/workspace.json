@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/BaseAI/Kimi.md",
+                "file": "About/BaseLLM/Kimi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -26,19 +26,15 @@
             "id": "aa3cbc489200ac21",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "AI Project View.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false
-                  ]
-                }
+                "file": "About/Plugins/Kanban.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "AI Project View"
+              "icon": "lucide-file",
+              "title": "Kanban"
             }
           }
         ],
@@ -240,18 +236,19 @@
   },
   "active": "aa3cbc489200ac21",
   "lastOpenFiles": [
+    "AI Project View.md",
+    "About/Plugins/Kanban.md",
     "About/Plugins/Surfing.md",
-    "About/BaseAI/Kimi.md",
-    "About/BaseAI/Ollama.md",
+    "About/BaseLLM/Kimi.md",
+    "About/BaseLLM/Ollama.md",
     "Chats/New Chat.md",
     "About/Plugins/Copilot.md",
     "About/Plugins/Local GPT.md",
     "About/Plugins/Git packup.md",
     "About/Plugins/Smart2Brain.md",
     "README.md",
-    "AI Project View.md",
     "About/Plugins",
-    "About/BaseAI",
+    "About/BaseLLM",
     "About/CSS & Typesetting.md",
     "Chats",
     "About",
@@ -278,7 +275,6 @@
     "_Health/🍴📝饮食记录.md",
     "__PoliAI/Singapore/新加坡人力资源部 工签.canvas",
     "_Course 24 Fall/个人作业 10分 Plagiarim reflection paper.md",
-    "__PoliAI/Assignment 1.md",
     "Z_Attachments/2024-10-11-22-51盯盘1.png",
     "Z_Attachments/image3.png",
     "Z_Attachments/image.png",
