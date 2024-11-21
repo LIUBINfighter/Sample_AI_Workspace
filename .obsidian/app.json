@@ -4,7 +4,7 @@
   "trashOption": "local",
   "newFileLocation": "current",
   "newFileFolderPath": "00_Inbox_收集箱",
-  "attachmentFolderPath": "attachments",
+  "attachmentFolderPath": "docs/attachments",
   "pdfExportSettings": {
     "includeName": false,
     "pageSize": "A4",

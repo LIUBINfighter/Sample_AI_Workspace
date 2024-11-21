@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/BaseLLM/Kimi.md",
+                "file": "docs/BaseLLM/Kimi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -26,19 +26,62 @@
             "id": "aa3cbc489200ac21",
             "type": "leaf",
             "state": {
+              "type": "kanban",
+              "state": {
+                "file": "AI Project View.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "AI Project View"
+            }
+          },
+          {
+            "id": "6b99c769c3068114",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/attachments/直接删去git插件.png"
+              },
+              "icon": "lucide-image",
+              "title": "直接删去git插件"
+            }
+          },
+          {
+            "id": "b7d9fc6cd0ef753d",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Plugins/Surfing.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Surfing"
+              "title": "README"
+            }
+          },
+          {
+            "id": "2b6a09b7eefa8ac4",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-view",
+              "state": {
+                "url": "https://kimi.moonshot.cn/"
+              },
+              "icon": "lucide-file",
+              "title": "Kimi.ai - 会推理解析，能深度思考的AI助手"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -222,35 +265,38 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "aa3cbc489200ac21",
+  "active": "f4d0e98caad1d6ae",
   "lastOpenFiles": [
+    "AI Project View.md",
+    "docs/Surfing.md",
+    "docs/Kanban.md",
+    "docs/Git packup.md",
+    "docs/CSS & Typesetting.md",
+    "docs/BaseLLM/Ollama.md",
+    "docs/BaseLLM/Kimi.md",
+    "docs/AI Plugins/Smart2Brain.md",
+    "docs/AI Plugins/Local GPT.md",
+    "Workspace/未命名.md",
+    "About/未命名.md",
+    "README.md",
+    "docs/attachments/直接删去git插件.png",
+    "_Workspace",
+    "About/未命名",
     "About/Plugins/未命名.md",
-    "About/Plugins/Surfing.md",
-    "About/Plugins/Smart2Brain.md",
-    "About/Plugins/Local GPT.md",
-    "About/Plugins/Kanban.md",
-    "About/Plugins/Git packup.md",
-    "About/Plugins/Copilot.md",
-    "About/BaseLLM/Kimi.md",
-    "About/BaseLLM/Ollama.md",
-    "attachments/Kimi_API_keys获取.png",
-    "attachments",
+    "docs/AI Plugins/Copilot.md",
+    "docs/attachments/Kimi_API_keys获取.png",
+    "docs/attachments",
     "copilot-conversations/Untitled_Chat@20241121_193449.md",
     "copilot-conversations",
-    "AI Project View.md",
     "Chats/New Chat.md",
-    "README.md",
-    "About/Plugins",
-    "About/BaseLLM",
-    "About/CSS & Typesetting.md",
+    "docs/AI Plugins",
+    "docs/BaseLLM",
     "Chats",
-    "About",
+    "docs",
     "新建文件夹",
     "git.ignore",
     "gitignore.md",
-    "新建 文本文档.txt",
     "Sample_AI_Workspace/README.md",
-    "Sample_AI_Workspace",
     "_总面板.md",
     "__PoliAI/📚💭工作区跳转.md",
     "SD绘画-OC设计.md",
@@ -261,8 +307,6 @@
     "Z_Attachments/资产定价模型.png",
     "Z_Attachments/课程考核方法.png",
     "Z_Attachments/详解INFP从敏感忧郁到成熟强大的性格发展过程.md",
-    "_Course 24 Fall/EAP Vocabulary Quiz 1 in Week 6.md",
-    "_Daily_Writing/2024-10-12-星期六.md",
     "__PoliAI/Singapore/新加坡人力资源部 工签.canvas",
     "Z_Attachments/2024-10-11-22-51盯盘1.png",
     "Z_Attachments/image3.png",
@@ -273,7 +317,6 @@
     "__PoliAI/构思场景.canvas",
     "__Workflow/Obsidian/AI.canvas",
     "Z_Attachments/大二秋课表最终最终版-真的不会再改了.png",
-    "Z_Attachments/参考书目.png",
     "_Workflow/AI.canvas",
     "_Investment/EliMiller_BTC屠龙技/Sep 4 Miller BTC 第六篇.canvas",
     "_Projects/选课参考/课程关系网络-商学院大数据管理与应用专业.canvas",
