@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/BaseAI/Kimi.md",
+                "file": "About/Plugins/Copilot.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kimi"
+              "title": "Copilot"
             }
           }
         ]
@@ -194,12 +194,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 406.5,
-    "collapsed": true
+    "width": 406.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,20 +217,20 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "f4d0e98caad1d6ae",
+  "active": "412d8a03d1b08592",
   "lastOpenFiles": [
+    "About/Plugins/Copilot.md",
+    "About/Plugins/Local GPT.md",
+    "About/Plugins/Git packup.md",
+    "About/Plugins/Smart2Brain.md",
+    "README.md",
+    "Chats/New Chat.md",
+    "About/AI Project View.md",
+    "About/BaseAI/Kimi.md",
     "About/Plugins",
     "About/BaseAI/Ollama.md",
-    "About/BaseAI/Kimi.md",
     "About/BaseAI",
-    "About/Copilot.md",
-    "About/Git packup.md",
-    "About/Local GPT.md",
-    "About/Smart2Brain.md",
     "About/CSS & Typesetting.md",
-    "About/AI Project View.md",
-    "Chats/New Chat.md",
-    "README.md",
     "Chats",
     "About",
     "新建文件夹",
@@ -248,7 +247,6 @@
     "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权入门.md",
     "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权期货及其他衍生产品第9版 (赫尔) (Z-Library).pdf",
     "_Course 24 Fall/FIN205 金融与创业前沿论坛/金融与创业前沿论坛.md",
-    "Z_Attachments/科技企业评估模型 王树勋 2024-10.pdf",
     "Plugins/Chats/Derivatives Introduction.md",
     "Z_Attachments/资产定价模型.png",
     "Z_Attachments/课程考核方法.png",
