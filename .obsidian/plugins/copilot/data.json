@@ -24,7 +24,7 @@
   "defaultSaveFolder": "copilot-conversations",
   "defaultConversationTag": "copilot-conversation",
   "autosaveChat": true,
-  "defaultOpenArea": "view",
+  "defaultOpenArea": "editor",
   "customPromptsFolder": "copilot-conversations/copilot-custom-prompts",
   "indexVaultToVectorStore": "ON MODE SWITCH",
   "qaExclusions": "attachments, Plugins, Chats, copilot-conversations",
