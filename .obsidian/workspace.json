@@ -47,7 +47,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "docs/attachments/直接删去git插件.png"
+                "file": "docs/attachment/img/直接删去git插件.png"
               },
               "icon": "lucide-image",
               "title": "直接删去git插件"
@@ -59,13 +59,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "README_ZH.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "README_ZH"
             }
           },
           {
@@ -265,27 +265,31 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "f4d0e98caad1d6ae",
+  "active": "b7d9fc6cd0ef753d",
   "lastOpenFiles": [
-    "AI Project View.md",
-    "docs/Surfing.md",
-    "docs/Kanban.md",
+    "docs/attachment/下载仓库压缩包.png",
+    "docs/attachment/DownloadOllama.png",
+    "README.md",
     "docs/Git packup.md",
+    "docs/Kanban.md",
+    "docs/Surfing.md",
+    "AI Project View.md",
+    "docs/BaseLLM/Kimi.md",
     "docs/CSS & Typesetting.md",
     "docs/BaseLLM/Ollama.md",
-    "docs/BaseLLM/Kimi.md",
-    "docs/AI Plugins/Smart2Brain.md",
+    "README_ZH.md",
+    "docs/AI Plugins/Copilot.md",
     "docs/AI Plugins/Local GPT.md",
+    "docs/AI Plugins/Smart2Brain.md",
+    "docs/attachment",
     "Workspace/未命名.md",
     "About/未命名.md",
-    "README.md",
-    "docs/attachments/直接删去git插件.png",
+    "docs/attachment/img/直接删去git插件.png",
     "_Workspace",
     "About/未命名",
     "About/Plugins/未命名.md",
-    "docs/AI Plugins/Copilot.md",
-    "docs/attachments/Kimi_API_keys获取.png",
-    "docs/attachments",
+    "docs/attachment/img/Kimi_API_keys获取.png",
+    "docs/attachment/img",
     "copilot-conversations/Untitled_Chat@20241121_193449.md",
     "copilot-conversations",
     "Chats/New Chat.md",
@@ -294,7 +298,6 @@
     "Chats",
     "docs",
     "新建文件夹",
-    "git.ignore",
     "gitignore.md",
     "Sample_AI_Workspace/README.md",
     "_总面板.md",
@@ -303,10 +306,8 @@
     "_Course 24 Fall/EBA203 管理信息系统/EBA203 管理信息系统.md",
     "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权入门.md",
     "_Course 24 Fall/FIN205 金融与创业前沿论坛/金融与创业前沿论坛.md",
-    "Plugins/Chats/Derivatives Introduction.md",
     "Z_Attachments/资产定价模型.png",
     "Z_Attachments/课程考核方法.png",
-    "Z_Attachments/详解INFP从敏感忧郁到成熟强大的性格发展过程.md",
     "__PoliAI/Singapore/新加坡人力资源部 工签.canvas",
     "Z_Attachments/2024-10-11-22-51盯盘1.png",
     "Z_Attachments/image3.png",
@@ -316,7 +317,6 @@
     "Z_Attachments/附件1 课程群截图.jpg",
     "__PoliAI/构思场景.canvas",
     "__Workflow/Obsidian/AI.canvas",
-    "Z_Attachments/大二秋课表最终最终版-真的不会再改了.png",
     "_Workflow/AI.canvas",
     "_Investment/EliMiller_BTC屠龙技/Sep 4 Miller BTC 第六篇.canvas",
     "_Projects/选课参考/课程关系网络-商学院大数据管理与应用专业.canvas",

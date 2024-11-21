@@ -4,7 +4,7 @@
   "trashOption": "local",
   "newFileLocation": "current",
   "newFileFolderPath": "00_Inbox_收集箱",
-  "attachmentFolderPath": "docs/attachments",
+  "attachmentFolderPath": "docs/attachment",
   "pdfExportSettings": {
     "includeName": false,
     "pageSize": "A4",
@@ -17,5 +17,6 @@
   "readableLineLength": true,
   "newLinkFormat": "shortest",
   "promptDelete": false,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "useMarkdownLinks": true
 }
