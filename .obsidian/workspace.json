@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/BaseLLM/Kimi.md",
+                "file": "About/BaseLLM/Ollama.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kimi"
+              "title": "Ollama"
             }
           }
         ],
@@ -235,15 +235,15 @@
   },
   "active": "aa3cbc489200ac21",
   "lastOpenFiles": [
+    "About/BaseLLM/Kimi.md",
+    "About/BaseLLM/Ollama.md",
     "Z_Attachments/Kimi_API_keys获取.png",
     "Z_Attachments",
     "copilot-conversations/Untitled_Chat@20241121_193449.md",
     "copilot-conversations",
-    "About/BaseLLM/Ollama.md",
     "About/Plugins/Kanban.md",
     "AI Project View.md",
     "About/Plugins/Surfing.md",
-    "About/BaseLLM/Kimi.md",
     "Chats/New Chat.md",
     "About/Plugins/Copilot.md",
     "About/Plugins/Local GPT.md",
@@ -285,7 +285,6 @@
     "Z_Attachments/大二秋课表最终最终版-真的不会再改了.png",
     "Z_Attachments/参考书目.png",
     "_Workflow/AI.canvas",
-    "Z_Attachments/小组分工情况.png",
     "_Investment/EliMiller_BTC屠龙技/Sep 4 Miller BTC 第六篇.canvas",
     "_Projects/选课参考/课程关系网络-商学院大数据管理与应用专业.canvas",
     "_Investment/EliMiller_BTC屠龙技/Jul 28 Miller 复习一二篇.canvas",

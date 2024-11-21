@@ -4,7 +4,7 @@
 
 ## 生成API Keys
 
-生成API Keys是接入在线LLM服务商的必要步骤。Kimi可以免费生成
+生成API Keys是接入在线LLM服务商的必要步骤。Kimi可以免费生成最多10个API Keys，并且赠送20元免费额度（很香），我们以此为例介绍全流程，其他在线LLM提供商同理。
 
 [点击此页面进入Moonshot AI控制台](https://platform.moonshot.cn/console)
 
