@@ -6,14 +6,18 @@ kanban-plugin: board
 
 ## AI Project
 
-- [ ] [[Smart2Brain]]
-- [ ] [[Local GPT]]
+- [ ] 问答类型：[[Smart2Brain]]
+- [ ] 文档写作：[[Local GPT]]
+- [ ] 本地LLM服务：[[Ollama]]
+- [ ] 在线LLM服务示例：[[Kimi]]
+- [ ] 问答类型：[[Copilot]]
 
 
 ## Infrastructure
 
 - [ ] [[Git packup]]
 - [ ] [[CSS & Typesetting]]
+- [ ] [[Surfing]]
 
 
 
