@@ -32,7 +32,7 @@
   "chatNoteContextPath": "",
   "chatNoteContextTags": [],
   "debug": false,
-  "enableEncryption": false,
+  "enableEncryption": true,
   "maxSourceChunks": 6,
   "groqApiKey": "",
   "activeModels": [
