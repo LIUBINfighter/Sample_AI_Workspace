@@ -1,9 +1,7 @@
 [
-  "obsidian-pandoc",
   "obsidian-paste-image-rename",
   "break-page",
   "obsidian-latex-suite",
-  "multi-column-markdown",
   "chronology",
   "dataview",
   "local-gpt",
@@ -12,10 +10,10 @@
   "remember-cursor-position",
   "surfing",
   "obsidian-kanban",
-  "floating-toc",
   "obsidian-style-settings",
   "docxer",
   "simple-time-tracker",
   "vault-size-history",
-  "obsidian-git"
+  "obsidian-git",
+  "copilot"
 ]
