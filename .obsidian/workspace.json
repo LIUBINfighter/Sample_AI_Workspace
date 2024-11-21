@@ -13,16 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Plugins/Copilot.md",
+                "file": "About/BaseAI/Kimi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Copilot"
+              "title": "Kimi"
+            }
+          },
+          {
+            "id": "aa3cbc489200ac21",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-view",
+              "state": {
+                "url": "https://platform.moonshot.cn/docs/api/chat"
+              },
+              "icon": "lucide-file",
+              "title": "Surfing"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -217,18 +230,18 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "412d8a03d1b08592",
+  "active": "aa3cbc489200ac21",
   "lastOpenFiles": [
+    "About/BaseAI/Kimi.md",
+    "About/BaseAI/Ollama.md",
+    "Chats/New Chat.md",
     "About/Plugins/Copilot.md",
     "About/Plugins/Local GPT.md",
     "About/Plugins/Git packup.md",
     "About/Plugins/Smart2Brain.md",
     "README.md",
-    "Chats/New Chat.md",
     "About/AI Project View.md",
-    "About/BaseAI/Kimi.md",
     "About/Plugins",
-    "About/BaseAI/Ollama.md",
     "About/BaseAI",
     "About/CSS & Typesetting.md",
     "Chats",
