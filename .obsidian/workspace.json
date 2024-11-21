@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Plugins/Kanban.md",
+                "file": "About/BaseLLM/Kimi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kanban"
+              "title": "Kimi"
             }
           }
         ],
@@ -200,7 +200,7 @@
             }
           },
           {
-            "id": "9c79715e4743cebb",
+            "id": "3092aa890e6c9276",
             "type": "leaf",
             "state": {
               "type": "copilot-chat-view",
@@ -210,12 +210,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 406.5,
-    "collapsed": true
+    "width": 406.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,11 +235,11 @@
   },
   "active": "aa3cbc489200ac21",
   "lastOpenFiles": [
-    "AI Project View.md",
+    "About/BaseLLM/Ollama.md",
     "About/Plugins/Kanban.md",
+    "AI Project View.md",
     "About/Plugins/Surfing.md",
     "About/BaseLLM/Kimi.md",
-    "About/BaseLLM/Ollama.md",
     "Chats/New Chat.md",
     "About/Plugins/Copilot.md",
     "About/Plugins/Local GPT.md",
