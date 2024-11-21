@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/BaseLLM/Ollama.md",
+                "file": "About/BaseLLM/Kimi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ollama"
+              "title": "Kimi"
             }
           }
         ],
@@ -235,8 +235,8 @@
   },
   "active": "aa3cbc489200ac21",
   "lastOpenFiles": [
-    "About/BaseLLM/Kimi.md",
     "About/BaseLLM/Ollama.md",
+    "About/BaseLLM/Kimi.md",
     "Z_Attachments/Kimi_API_keys获取.png",
     "Z_Attachments",
     "copilot-conversations/Untitled_Chat@20241121_193449.md",
