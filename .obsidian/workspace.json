@@ -198,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -221,7 +221,7 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "f4d0e98caad1d6ae",
+  "active": "418457cd2a2d3188",
   "lastOpenFiles": [
     "About/BaseLLM/Ollama.md",
     "About/BaseLLM/Kimi.md",
