@@ -2,6 +2,8 @@
 
 这是我在南方科技大学24秋季学期，EBA203管理信息系统课程的个人AI项目。
 
+
+
 # Obsidian+AI工作流
 
 本仓库是为了向Obsidian新手介绍Obsidian中的AI工作流而打造的。
@@ -31,11 +33,31 @@ Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务
 ### Windows
 ![DownloadOllama|600](DownloadOllama.png)
 
+`win+r`呼出
+win+R输入cmd运行enter确定
+![|350](win+R输入cmd运行enter确定.png)
+
+输入
+```bash
+ollama list
+```
+
+![](ollama_list.png)
+
+如果你刚下载Ollama，那么应当只有NAME-ID-SIZE-MODIFIED一行。
+
+我们要使用llama3.2yij
+
+
 ### Ubuntu
+
+我们用snap下载ollama，其他操作和windows没有太大区别。
+
 
 ```bash
 sudo snap install ollama
 ```
+
 
 更多个性化配置参考[[Ollama]]以及Ollama官网 https://ollama.com/
 
