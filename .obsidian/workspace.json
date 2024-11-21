@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "About/BaseAI/Kimi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Kimi"
             }
           }
         ]
@@ -170,13 +170,35 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "412d8a03d1b08592",
+            "type": "leaf",
+            "state": {
+              "type": "chat-view",
+              "state": {
+                "file": "Chats/New Chat.md"
+              },
+              "icon": "message-square",
+              "title": "New Chat"
+            }
+          },
+          {
+            "id": "9c79715e4743cebb",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 598.5,
+    "width": 406.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -196,15 +218,22 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "d6ceca00feea81f6",
+  "active": "f4d0e98caad1d6ae",
   "lastOpenFiles": [
-    "About/AI Project View.md",
-    "About/CSS & Typesetting.md",
+    "About/Plugins",
+    "About/BaseAI/Ollama.md",
+    "About/BaseAI/Kimi.md",
+    "About/BaseAI",
+    "About/Copilot.md",
     "About/Git packup.md",
     "About/Local GPT.md",
     "About/Smart2Brain.md",
-    "About",
+    "About/CSS & Typesetting.md",
+    "About/AI Project View.md",
+    "Chats/New Chat.md",
     "README.md",
+    "Chats",
+    "About",
     "新建文件夹",
     "git.ignore",
     "gitignore.md",
@@ -220,7 +249,6 @@
     "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权期货及其他衍生产品第9版 (赫尔) (Z-Library).pdf",
     "_Course 24 Fall/FIN205 金融与创业前沿论坛/金融与创业前沿论坛.md",
     "Z_Attachments/科技企业评估模型 王树勋 2024-10.pdf",
-    "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权期货及其他衍生产品第9版 (赫尔) (Z-Library).pdf.fdmdownload",
     "Plugins/Chats/Derivatives Introduction.md",
     "Z_Attachments/资产定价模型.png",
     "Z_Attachments/课程考核方法.png",
@@ -230,15 +258,10 @@
     "_Health/🍴📝饮食记录.md",
     "__PoliAI/Singapore/新加坡人力资源部 工签.canvas",
     "_Course 24 Fall/个人作业 10分 Plagiarim reflection paper.md",
-    "_Course 24 Fall/EAP 学术英语写作/week 5 Assignment/~$agiarim reflction(Liu Huajie)-Class 8.docx",
     "__PoliAI/Assignment 1.md",
-    "盯盘.md",
     "Z_Attachments/2024-10-11-22-51盯盘1.png",
     "Z_Attachments/image3.png",
     "Z_Attachments/image.png",
-    "__PoliAI/Meeting Memo/Oct 11 周五晚会议.md",
-    "_Daily_Writing/2024-10-11-星期五.md",
-    "Confidential 个人信息.md",
     "Z_Attachments/大二秋课表最终最终版-真的不会再改了 饮食视图.png",
     "_Bussiness_Trading/线性代数习题册项目分析.canvas",
     "Z_Attachments/附件1 课程群截图.jpg",
