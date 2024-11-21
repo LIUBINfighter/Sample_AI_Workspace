@@ -188,18 +188,6 @@
             }
           },
           {
-            "id": "412d8a03d1b08592",
-            "type": "leaf",
-            "state": {
-              "type": "chat-view",
-              "state": {
-                "file": "Chats/New Chat.md"
-              },
-              "icon": "message-square",
-              "title": "New Chat"
-            }
-          },
-          {
             "id": "3092aa890e6c9276",
             "type": "leaf",
             "state": {
@@ -210,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -233,7 +221,7 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "aa3cbc489200ac21",
+  "active": "f4d0e98caad1d6ae",
   "lastOpenFiles": [
     "About/BaseLLM/Ollama.md",
     "About/BaseLLM/Kimi.md",
