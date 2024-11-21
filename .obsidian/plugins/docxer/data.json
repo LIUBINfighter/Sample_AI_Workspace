@@ -1,7 +1,0 @@
-{
-  "deleteFileAfterConversion": false,
-  "importComments": true,
-  "fallbackAttachmentName": "Attachment",
-  "attachmentsFolder": "subfolder",
-  "customAttachmentsFolder": "_Docxer"
-}

@@ -1,19 +1,9 @@
 [
-  "obsidian-paste-image-rename",
-  "break-page",
-  "obsidian-latex-suite",
-  "chronology",
-  "dataview",
   "local-gpt",
-  "quick-latex",
-  "smart-second-brain",
-  "remember-cursor-position",
   "surfing",
   "obsidian-kanban",
-  "obsidian-style-settings",
-  "docxer",
-  "simple-time-tracker",
-  "vault-size-history",
   "obsidian-git",
-  "copilot"
+  "copilot",
+  "obsidian-paste-image-rename",
+  "smart-second-brain"
 ]
