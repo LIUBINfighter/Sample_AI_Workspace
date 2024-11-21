@@ -202,7 +202,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 406.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,12 +222,12 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "418457cd2a2d3188",
+  "active": "f4d0e98caad1d6ae",
   "lastOpenFiles": [
     "About/BaseLLM/Ollama.md",
     "About/BaseLLM/Kimi.md",
-    "Z_Attachments/Kimi_API_keys获取.png",
-    "Z_Attachments",
+    "attachments/Kimi_API_keys获取.png",
+    "attachments",
     "copilot-conversations/Untitled_Chat@20241121_193449.md",
     "copilot-conversations",
     "About/Plugins/Kanban.md",
