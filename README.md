@@ -43,24 +43,28 @@ Obsidian仓库设置，当然要以插件为主啦！所以我们优先介绍插
 
 如果有些糊涂，可以略过两个枯燥的表格，直接看我的主观体验就行。
 
+对表格中的细节有疑惑，直接点击表格中的文件链接即可跳转（这里假设是obsidian环境）。
+
 ## 基本情况
 
-| Name           | Repo                                                                                                | Download | Star | Update      |
-| -------------- | --------------------------------------------------------------------------------------------------- | -------- | ---- | ----------- |
-| Text Generator | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) | 335k     | 1.5k | 3weeks ago  |
-| LocalGPT       | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)                       | 18.7k    | 328  | last week   |
-| Copilot        | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)                       | 264k     | 3.1k | 9 hours ago |
-| Smart2Brain    | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain)                 | 25.1k    | 633  | 6months ago |
+| Name                                                    | Repo                                                                                                | Download | Star | Update      |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------- | ---- | ----------- |
+| [Text Generator](docs/AI%20Plugins/Text%20Generator.md) | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) | 335k     | 1.5k | 3weeks ago  |
+| [Local GPT](docs/AI%20Plugins/Local%20GPT.md)           | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)                       | 18.7k    | 328  | last week   |
+| [Copilot](docs/AI%20Plugins/Copilot.md)                 | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)                       | 264k     | 3.1k | 9 hours ago |
+| [Smart2Brain](docs/AI%20Plugins/Smart2Brain.md)         | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain)                 | 25.1k    | 633  | 6months ago |
+
+非常感谢社区的插件作者以及其他热衷于分享和帮助他人的参与者！
 
 ## 功能介绍
 
-| Name           | 边栏QA | 选定内容输入        | 阅读<br>.md  | 多文件               | 外链跳转           | 定制提示词                 | 定制传输格式 |
-| -------------- | ---- | ------------- | ---------- | ----------------- | -------------- | --------------------- | ------ |
-| Text Generator |      |               |            |                   |                |                       | 完全定制   |
-| LocalGPT       | ❌    | ✔<br>选中+自设快捷键 | ✔          | ❌<br>只支持在编辑的文档中解读 | ❌不能多文件联动       | 🔥插件面板设置<br>+社区支持     | ❌      |
-| Copilot        | ✔    | ✔<br>选中+右键    | ✔<br>提示词模板 | ✔<br>可调整文件数       | ✔较准确<br>❌跳转抽风  | 只支持1种自定义System Prompt | ❌      |
-| Smart2Brain    | ✔    | ❌<br>手动复制粘贴   | ✔          | ✔<br>可调整相似度       | 🤔不太准<br>✔跳转稳定 | ❌                     | ❌      |
-|                |      |               |            |                   |                |                       |        |
+| Name                                                    | 边栏QA | 选定内容输入        | 阅读<br>.md  | 多文件               | 外链跳转           | 定制提示词                 | 定制传输格式 |
+| ------------------------------------------------------- | ---- | ------------- | ---------- | ----------------- | -------------- | --------------------- | ------ |
+| [Text Generator](docs/AI%20Plugins/Text%20Generator.md) |      |               |            |                   |                |                       | 完全定制   |
+| [Local GPT](docs/AI%20Plugins/Local%20GPT.md)           | ❌    | ✔<br>选中+自设快捷键 | ✔          | ❌<br>只支持在编辑的文档中解读 | ❌不能多文件联动       | 🔥插件面板设置<br>+社区支持     | ❌      |
+| [Copilot](docs/AI%20Plugins/Copilot.md)                 | ✔    | ✔<br>选中+右键    | ✔<br>提示词模板 | ✔<br>可调整文件数       | ✔较准确<br>❌跳转抽风  | 只支持1种自定义System Prompt | ❌      |
+| [Smart2Brain](docs/AI%20Plugins/Smart2Brain.md)         | ✔    | ❌<br>手动复制粘贴   | ✔          | ✔<br>可调整相似度       | 🤔不太准<br>✔跳转稳定 | ❌                     | ❌      |
+|                                                         |      |               |            |                   |                |                       |        |
 
 ## 主观评价
 
@@ -135,7 +139,7 @@ win+R输入cmd运行enter确定
 ollama list
 ```
 
-![](ollama_list.png)
+![](docs/attachment/ollama_list.png)
 
 如果你刚下载Ollama，那么应当只有NAME-ID-SIZE-MODIFIED一行,没有其他的模型。
 
@@ -151,7 +155,7 @@ ollama list
 sudo snap install ollama
 ```
 
-更多个性化配置参考[[Ollama]]以及Ollama官网 https://ollama.com/
+更多个性化配置参考[Ollama](docs/BaseLLM/Ollama.md)以及Ollama官网 https://ollama.com/
 
 
 # 本地 vs 在线
