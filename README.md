@@ -2,11 +2,29 @@
 
 这是我在南方科技大学24秋季学期，EBA203管理信息系统课程的个人AI项目。
 
+我的博客会陆续更新教程和自己的使用体验，欢迎前来阅读：
+
+- [Huajie's Blog (liubinfighter.github.io)](https://liubinfighter.github.io/Blog/)
+
 # Obsidian+AI工作流
 
 本仓库是为了向Obsidian新手介绍Obsidian中的AI工作流而打造的。
 
 Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务则要同时学习LLM部署和Obsidian各AI插件的对接。我对本仓库的设计以及对应文档的写作就是Obsidian新手加快将AI融入Obsidian工作流的进程，按图索骥修改配置后根据效果自行取舍和进行个性化设置。
+
+本次使用的AI插件为（排名为个人喜好）：
+
+- [Local GPT](Local%20GPT.md)
+    脱离鼠标，只用键盘
+    提示词定制程度高，在文档中丝滑写作，添加表情包，概括，整理思路，修改错误
+- [Text Generator](Text%20Generator.md)
+    定制程度极高，上限高
+    可以自行根据LLM服务商手册+Advanced Setting自由定制
+- [Copilot](Copilot.md)
+    新兴插件，期待前途
+- [Smart2Brain](Smart2Brain.md)
+    最早入坑的插件，之后效果不是很稳定，现在开发者也不活跃
+    （凑数的）
 
 为了更大程度发挥各AI插件的功能，我根据我自己的习惯设置了其他的插件，包括：
 
@@ -17,20 +35,49 @@ Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务
 - [Git packup](Git%20packup.md)
     远程同步github仓库，保存你的项目进度
     （保持本地化可直接取消+删除插件）
-# 聊天Copilot 写作LocalGPT 在线Kimi
+
+
+# QA&Writing
+
+
+
+## Copilot
 
 [Documentation | Copilot for Obsidian (obsidiancopilot.com)](https://www.obsidiancopilot.com/en/docs)
+
+
+# 本地Ollama 在线Kimi
+
+## Ollama
+
+Ollama目前是本地部署LLM的首选之一。操作以及对接插件非常简单
+
+部署Ollama可继续往下看 **快速开始** ，或者[点击查看Ollama详细介绍](Ollama.md).
+
+## Kimi
+
+Kimi以强大的长文本能力，文件上传和联网搜索能力（以及context window <20w字免费）占据了独特的C端生态位（反正我是不能没有Kimi了）。
+
+在Obsidian中如果按照常规的思路去使用api，那正是太屈才了！但是开两个窗口分屏实在是太麻烦了，能不能再Obsidian里使用Kimi呢？我们使用[Surfing](Surfing.md)插件就可以将Obsidian变为浏览器。目前本仓库的设置下你应当可以在Obsidian里直接打开以下链接：[kimi.moonshot](https://kimi.moonshot.cn/).
+
+![](Obsidian-Surfing-Kimi.png)
+
+扫码登录一气呵成。如果你喜欢暗色主题也可以用Suring切换。
+
+![](Obsidian-Surging-DarkMode.png)
+
 
 
 
 #### 插件横纵对比
 主观
 
-| Name        | Repo                                                                                | Download | Star | Update      |
-| ----------- | ----------------------------------------------------------------------------------- | -------- | ---- | ----------- |
-| Copilot     | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)       |          | 3.1k | 9 hours ago |
-| LocalGPT    | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)       |          | 328  | last week   |
-| Smart2Brain | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain) |          | 633  | 6months ago |
+| Name           | Repo                                                                                                | Download | Star | Update      |
+| -------------- | --------------------------------------------------------------------------------------------------- | -------- | ---- | ----------- |
+| Text Generator | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) |          | 1.5k | 3weeks ago  |
+| LocalGPT       | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)                       |          | 328  | last week   |
+| Copilot        | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)                       |          | 3.1k | 9 hours ago |
+| Smart2Brain    | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain)                 |          | 633  | 6months ago |
 
 功能：
 支持
@@ -38,11 +85,12 @@ Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务
 阅读选定内容
 
 
-| Name        | 选定内容输入 | 解读特定文件 | 输出外链跳转 |
-| ----------- | ------ | ------ | ------ |
-| Copilot     |        |        |        |
-| LocalGPT    |        |        |        |
-| Smart2Brain |        |        |        |
+| Name           | 边栏QA | 选定内容输入 | 解读特定文件      | 输出外链跳转          | 定制提示词                        | 定制传输格式 |
+| -------------- | ---- | ------ | ----------- | --------------- | ---------------------------- | ------ |
+| Text Generator |      |        |             |                 |                              | 完全定制   |
+| LocalGPT       | ❌    | ✔      |             | 不能多文件联动         |                              |        |
+| Copilot        | ✔    | ✔      | ✔<br>提示词有模板 | 准确性较好<br>跳转功能抽风 | 只支持1种System Prompt<br>不能快速调用 |        |
+| Smart2Brain    | ✔    |        |             | 准确性一般<br>跳转功能稳定 |                              |        |
 
 
 

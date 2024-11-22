@@ -24,8 +24,8 @@
   "useCustomIcons": false,
   "useWebview": false,
   "useIconList": true,
-  "darkMode": true,
-  "randomBackground": false,
+  "darkMode": false,
+  "randomBackground": true,
   "lastOpenedFiles": true,
   "bookmarkManager": {
     "openBookMark": false,
@@ -49,5 +49,6 @@
   "treeData": [],
   "enableHtmlPreview": true,
   "supportLivePreviewInlineUrl": true,
-  "enableTreeView": true
+  "enableTreeView": true,
+  "focusSearchBarViaKeyboard": true
 }

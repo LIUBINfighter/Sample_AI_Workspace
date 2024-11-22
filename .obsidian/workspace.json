@@ -23,87 +23,22 @@
             }
           },
           {
-            "id": "aa3cbc489200ac21",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "AI Project View.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "AI Project View"
-            }
-          },
-          {
-            "id": "6b99c769c3068114",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "docs/attachment/img/直接删去git插件.png"
-              },
-              "icon": "lucide-image",
-              "title": "直接删去git插件"
-            }
-          },
-          {
             "id": "b7d9fc6cd0ef753d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Workspace/示例1：阅读知乎文章+做笔记.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "示例1：阅读知乎文章+做笔记"
-            }
-          },
-          {
-            "id": "8c2380214220b5b2",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://zhuanlan.zhihu.com/p/656676717"
-              },
-              "icon": "lucide-file",
-              "title": "《综述：全新大语言模型驱动的Agent》——4.5万字详细解读复旦NLP和米哈游最新Agent Survey - 知乎"
-            }
-          },
-          {
-            "id": "2b6a09b7eefa8ac4",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://kimi.moonshot.cn/"
-              },
-              "icon": "lucide-file",
-              "title": "Kimi.ai - 会推理解析，能深度思考的AI助手"
-            }
-          },
-          {
-            "id": "f8f6ba71b564b544",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "README"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,14 +128,19 @@
       "audio-recorder:开始/结束录音": true,
       "smart-second-brain:打开 S2B 聊天": false,
       "graph:查看关系图谱": false,
-      "obsidian-kanban:创建新看板": false
+      "obsidian-kanban:创建新看板": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "f4d0e98caad1d6ae",
+  "active": "b7d9fc6cd0ef753d",
   "lastOpenFiles": [
-    "docs/attachment/Copilot 文档中总结内容.png",
+    "docs/attachment/Obsidian-Surging-DarkMode.png",
     "README.md",
+    "docs/attachment/Obsidian-Surfing-Kimi.png",
+    "docs/AI Plugins/Text Generator.md",
     "_Workspace/示例1：阅读知乎文章+做笔记.md",
+    "docs/attachment/Copilot 文档中总结内容.png",
     "AI Project View.md",
     "docs/BaseLLM/Kimi.md",
     "Chats/New Chat.md",
@@ -228,7 +168,6 @@
     "_Workspace",
     "About/未命名",
     "About/Plugins/未命名.md",
-    "docs/attachment/img/Kimi_API_keys获取.png",
     "docs/attachment/img",
     "copilot-conversations/Untitled_Chat@20241121_193449.md",
     "copilot-conversations",
@@ -242,8 +181,6 @@
     "__PoliAI/📚💭工作区跳转.md",
     "SD绘画-OC设计.md",
     "_Course 24 Fall/EBA203 管理信息系统/EBA203 管理信息系统.md",
-    "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权入门.md",
-    "Z_Attachments/资产定价模型.png",
     "__PoliAI/Singapore/新加坡人力资源部 工签.canvas",
     "_Bussiness_Trading/线性代数习题册项目分析.canvas",
     "__PoliAI/构思场景.canvas",
