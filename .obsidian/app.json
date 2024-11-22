@@ -15,7 +15,7 @@
   "alwaysUpdateLinks": true,
   "defaultViewMode": "source",
   "readableLineLength": true,
-  "newLinkFormat": "shortest",
+  "newLinkFormat": "relative",
   "promptDelete": false,
   "showUnsupportedFiles": true,
   "useMarkdownLinks": true
