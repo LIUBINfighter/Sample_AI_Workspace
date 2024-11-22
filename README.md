@@ -37,6 +37,38 @@ Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务
     （保持本地化可直接取消+删除插件）
 
 
+# 插件横纵对比
+
+Obsidian仓库设置，当然要以插件为主啦！所以我们优先介绍插件。以下内容主要都依据2024年11月22日访问+使用并制表。
+
+如果有些糊涂，可以略过两个枯燥的表格，直接看我的主观体验就行。
+
+## 基本情况
+
+| Name           | Repo                                                                                                | Download | Star | Update      |
+| -------------- | --------------------------------------------------------------------------------------------------- | -------- | ---- | ----------- |
+| Text Generator | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) | 335k     | 1.5k | 3weeks ago  |
+| LocalGPT       | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)                       | 18.7k    | 328  | last week   |
+| Copilot        | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)                       | 264k     | 3.1k | 9 hours ago |
+| Smart2Brain    | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain)                 | 25.1k    | 633  | 6months ago |
+
+## 功能介绍
+
+| Name           | 边栏QA | 选定内容输入        | 阅读<br>.md  | 多文件               | 外链跳转           | 定制提示词                 | 定制传输格式 |
+| -------------- | ---- | ------------- | ---------- | ----------------- | -------------- | --------------------- | ------ |
+| Text Generator |      |               |            |                   |                |                       | 完全定制   |
+| LocalGPT       | ❌    | ✔<br>选中+自设快捷键 | ✔          | ❌<br>只支持在编辑的文档中解读 | ❌不能多文件联动       | 🔥插件面板设置<br>+社区支持     | ❌      |
+| Copilot        | ✔    | ✔<br>选中+右键    | ✔<br>提示词模板 | ✔<br>可调整文件数       | ✔较准确<br>❌跳转抽风  | 只支持1种自定义System Prompt | ❌      |
+| Smart2Brain    | ✔    | ❌<br>手动复制粘贴   | ✔          | ✔<br>可调整相似度       | 🤔不太准<br>✔跳转稳定 | ❌                     | ❌      |
+|                |      |               |            |                   |                |                       |        |
+
+## 主观评价
+
+
+
+
+
+
 # QA&Writing
 
 
@@ -67,36 +99,6 @@ Kimi以强大的长文本能力，文件上传和联网搜索能力（以及cont
 ![](Obsidian-Surging-DarkMode.png)
 
 
-
-
-#### 插件横纵对比
-主观
-
-| Name           | Repo                                                                                                | Download | Star | Update      |
-| -------------- | --------------------------------------------------------------------------------------------------- | -------- | ---- | ----------- |
-| Text Generator | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) |          | 1.5k | 3weeks ago  |
-| LocalGPT       | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)                       |          | 328  | last week   |
-| Copilot        | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)                       |          | 3.1k | 9 hours ago |
-| Smart2Brain    | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain)                 |          | 633  | 6months ago |
-
-功能：
-支持
-
-阅读选定内容
-
-
-| Name           | 边栏QA | 选定内容输入 | 解读特定文件      | 输出外链跳转          | 定制提示词                        | 定制传输格式 |
-| -------------- | ---- | ------ | ----------- | --------------- | ---------------------------- | ------ |
-| Text Generator |      |        |             |                 |                              | 完全定制   |
-| LocalGPT       | ❌    | ✔      |             | 不能多文件联动         |                              |        |
-| Copilot        | ✔    | ✔      | ✔<br>提示词有模板 | 准确性较好<br>跳转功能抽风 | 只支持1种System Prompt<br>不能快速调用 |        |
-| Smart2Brain    | ✔    |        |             | 准确性一般<br>跳转功能稳定 |                              |        |
-
-
-
-
-客观
-截止2024年11月22日晚，
 
 
 
