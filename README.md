@@ -28,9 +28,22 @@ Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务
 
 | Name        | Repo                                                                                | Download | Star | Update      |
 | ----------- | ----------------------------------------------------------------------------------- | -------- | ---- | ----------- |
-| Copilot     | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)       |          | 3.1k |             |
+| Copilot     | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)       |          | 3.1k | 9 hours ago |
 | LocalGPT    | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)       |          | 328  | last week   |
 | Smart2Brain | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain) |          | 633  | 6months ago |
+
+功能：
+支持
+
+阅读选定内容
+
+
+| Name        | 选定内容输入 | 解读特定文件 | 输出外链跳转 |
+| ----------- | ------ | ------ | ------ |
+| Copilot     |        |        |        |
+| LocalGPT    |        |        |        |
+| Smart2Brain |        |        |        |
+
 
 
 

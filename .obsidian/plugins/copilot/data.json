@@ -121,21 +121,11 @@
     {
       "name": "llama3.2",
       "provider": "ollama",
-      "baseUrl": "0.0.0.0:11434",
+      "baseUrl": "https://localhost:11434",
       "apiKey": "",
       "enabled": true,
       "isBuiltIn": false,
-      "enableCors": false,
-      "isEmbeddingModel": false
-    },
-    {
-      "name": "lgkt/llama3-chinese-alpaca",
-      "provider": "ollama",
-      "baseUrl": "0.0.0.0:11434",
-      "apiKey": "",
-      "enabled": true,
-      "isBuiltIn": false,
-      "enableCors": false,
+      "enableCors": true,
       "isEmbeddingModel": false
     }
   ],

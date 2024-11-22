@@ -59,13 +59,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "_Workspace/示例1：阅读知乎文章+做笔记.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "示例1：阅读知乎文章+做笔记"
+            }
+          },
+          {
+            "id": "8c2380214220b5b2",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-view",
+              "state": {
+                "url": "https://zhuanlan.zhihu.com/p/656676717"
+              },
+              "icon": "lucide-file",
+              "title": "《综述：全新大语言模型驱动的Agent》——4.5万字详细解读复旦NLP和米哈游最新Agent Survey - 知乎"
             }
           },
           {
@@ -157,106 +169,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.49999618530273,
-    "collapsed": true
+    "width": 245.49999618530273
   },
   "right": {
     "id": "abbdd87168af714f",
     "type": "split",
-    "children": [
-      {
-        "id": "203df425f2068a47",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "af3ee11f86dae9da",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
-          {
-            "id": "44812c6b2b7a6aca",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "README.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "README 的出链列表"
-            }
-          },
-          {
-            "id": "291129c04929e145",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
-            }
-          },
-          {
-            "id": "b632878de0dd5cfc",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "README.md"
-              },
-              "icon": "lucide-list",
-              "title": "README 的大纲"
-            }
-          },
-          {
-            "id": "c3ba7b72eec719f3",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-            }
-          },
-          {
-            "id": "418457cd2a2d3188",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "1dba5f144ad6affe",
-            "type": "leaf",
-            "state": {
-              "type": "chat-view",
-              "state": {
-                "file": "Chats/New Chat.md"
-              },
-              "icon": "message-square",
-              "title": "New Chat"
-            }
-          }
-        ],
-        "currentTab": 6
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
     "width": 406.5,
     "collapsed": true
@@ -278,12 +196,14 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "b7d9fc6cd0ef753d",
+  "active": "f4d0e98caad1d6ae",
   "lastOpenFiles": [
+    "docs/attachment/Copilot 文档中总结内容.png",
+    "README.md",
+    "_Workspace/示例1：阅读知乎文章+做笔记.md",
     "AI Project View.md",
     "docs/BaseLLM/Kimi.md",
     "Chats/New Chat.md",
-    "README.md",
     "Chats",
     "README_EN.md",
     "docs/attachment/使用Obsidian打开本地仓库.png",
@@ -323,7 +243,6 @@
     "SD绘画-OC设计.md",
     "_Course 24 Fall/EBA203 管理信息系统/EBA203 管理信息系统.md",
     "_Course 24 Fall/FIN205 金融与创业前沿论坛/期权入门.md",
-    "_Course 24 Fall/FIN205 金融与创业前沿论坛/金融与创业前沿论坛.md",
     "Z_Attachments/资产定价模型.png",
     "__PoliAI/Singapore/新加坡人力资源部 工签.canvas",
     "_Bussiness_Trading/线性代数习题册项目分析.canvas",
