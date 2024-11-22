@@ -17,6 +17,27 @@ Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务
 - [Git packup](Git%20packup.md)
     远程同步github仓库，保存你的项目进度
     （保持本地化可直接取消+删除插件）
+# 聊天Copilot 写作LocalGPT 在线Kimi
+
+[Documentation | Copilot for Obsidian (obsidiancopilot.com)](https://www.obsidiancopilot.com/en/docs)
+
+
+
+#### 插件横纵对比
+主观
+
+| Name        | Repo                                                                                | Download | Star | Update      |
+| ----------- | ----------------------------------------------------------------------------------- | -------- | ---- | ----------- |
+| Copilot     | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)       |          | 3.1k |             |
+| LocalGPT    | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)       |          | 328  | last week   |
+| Smart2Brain | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain) |          | 633  | 6months ago |
+
+
+
+客观
+截止2024年11月22日晚，
+
+
 
 # 样例工作流介绍
 

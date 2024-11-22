@@ -91,7 +91,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -242,17 +242,19 @@
             }
           },
           {
-            "id": "3092aa890e6c9276",
+            "id": "1dba5f144ad6affe",
             "type": "leaf",
             "state": {
-              "type": "copilot-chat-view",
-              "state": {},
+              "type": "chat-view",
+              "state": {
+                "file": "Chats/New Chat.md"
+              },
               "icon": "message-square",
-              "title": "Copilot"
+              "title": "New Chat"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -276,11 +278,14 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "f8f6ba71b564b544",
+  "active": "b7d9fc6cd0ef753d",
   "lastOpenFiles": [
-    "README.md",
-    "README_EN.md",
     "AI Project View.md",
+    "docs/BaseLLM/Kimi.md",
+    "Chats/New Chat.md",
+    "README.md",
+    "Chats",
+    "README_EN.md",
     "docs/attachment/使用Obsidian打开本地仓库.png",
     "docs/attachment/ollama_pull_llama3.2.png",
     "docs/attachment/ollama_pull_llama3.2_.png",
@@ -291,7 +296,6 @@
     "docs/Git packup.md",
     "docs/Kanban.md",
     "docs/Surfing.md",
-    "docs/BaseLLM/Kimi.md",
     "docs/CSS & Typesetting.md",
     "docs/BaseLLM/Ollama.md",
     "docs/AI Plugins/Copilot.md",
@@ -308,10 +312,8 @@
     "docs/attachment/img",
     "copilot-conversations/Untitled_Chat@20241121_193449.md",
     "copilot-conversations",
-    "Chats/New Chat.md",
     "docs/AI Plugins",
     "docs/BaseLLM",
-    "Chats",
     "docs",
     "新建文件夹",
     "gitignore.md",

@@ -11,29 +11,29 @@
   "azureOpenAIApiEmbeddingDeploymentName": "",
   "googleApiKey": "",
   "openRouterAiApiKey": "",
-  "defaultChainType": "vault_qa",
-  "defaultModelKey": "lgkt/llama3-chinese-alpaca|ollama",
+  "defaultChainType": "llm_chain",
+  "defaultModelKey": "llama3.2|ollama",
   "embeddingModelKey": "nomic-embed-text|ollama",
-  "temperature": 0.05,
-  "maxTokens": 4000,
-  "contextTurns": 30,
+  "temperature": 0.1,
+  "maxTokens": 1000,
+  "contextTurns": 15,
   "userSystemPrompt": "",
   "openAIProxyBaseUrl": "",
   "openAIEmbeddingProxyBaseUrl": "",
   "stream": true,
   "defaultSaveFolder": "copilot-conversations",
   "defaultConversationTag": "copilot-conversation",
-  "autosaveChat": true,
-  "defaultOpenArea": "editor",
-  "customPromptsFolder": "copilot-conversations/copilot-custom-prompts",
+  "autosaveChat": false,
+  "defaultOpenArea": "view",
+  "customPromptsFolder": "copilot-custom-prompts",
   "indexVaultToVectorStore": "ON MODE SWITCH",
-  "qaExclusions": "attachments, Plugins, Chats, copilot-conversations",
+  "qaExclusions": "",
   "qaInclusions": "",
   "chatNoteContextPath": "",
   "chatNoteContextTags": [],
   "debug": false,
-  "enableEncryption": true,
-  "maxSourceChunks": 6,
+  "enableEncryption": false,
+  "maxSourceChunks": 3,
   "groqApiKey": "",
   "activeModels": [
     {
@@ -121,17 +121,7 @@
     {
       "name": "llama3.2",
       "provider": "ollama",
-      "baseUrl": "",
-      "apiKey": "",
-      "enabled": true,
-      "isBuiltIn": false,
-      "enableCors": false,
-      "isEmbeddingModel": false
-    },
-    {
-      "name": "llama2-chinese",
-      "provider": "ollama",
-      "baseUrl": "",
+      "baseUrl": "0.0.0.0:11434",
       "apiKey": "",
       "enabled": true,
       "isBuiltIn": false,
@@ -141,7 +131,7 @@
     {
       "name": "lgkt/llama3-chinese-alpaca",
       "provider": "ollama",
-      "baseUrl": "",
+      "baseUrl": "0.0.0.0:11434",
       "apiKey": "",
       "enabled": true,
       "isBuiltIn": false,
@@ -199,7 +189,7 @@
     {
       "name": "nomic-embed-text",
       "provider": "ollama",
-      "baseUrl": "",
+      "baseUrl": "0.0.0.0:11434",
       "apiKey": "",
       "enabled": true,
       "isBuiltIn": false,
@@ -207,7 +197,7 @@
       "isEmbeddingModel": true
     }
   ],
-  "embeddingRequestsPerSecond": 30,
+  "embeddingRequestsPerSecond": 10,
   "disableIndexOnMobile": false,
   "enabledCommands": {
     "fix-grammar-prompt": {
@@ -271,7 +261,5 @@
       "name": "Change tone of selection"
     }
   },
-  "promptUsageTimestamps": {
-    "文件理解": 1731247756666
-  }
+  "promptUsageTimestamps": {}
 }
