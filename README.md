@@ -96,11 +96,11 @@ Kimi以强大的长文本能力，文件上传和联网搜索能力（以及cont
 
 在Obsidian中如果按照常规的思路去使用api，那正是太屈才了！但是开两个窗口分屏实在是太麻烦了，能不能再Obsidian里使用Kimi呢？我们使用[Surfing](Surfing.md)插件就可以将Obsidian变为浏览器。目前本仓库的设置下你应当可以在Obsidian里直接打开以下链接：[kimi.moonshot](https://kimi.moonshot.cn/).
 
-![](Obsidian-Surfing-Kimi.png)
+![](docs/attachment/img/Obsidian-Surfing-Kimi.png)
 
 扫码登录一气呵成。如果你喜欢暗色主题也可以用Suring切换。
 
-![](Obsidian-Surging-DarkMode.png)
+![](docs/attachment/img/Obsidian-Surging-DarkMode.png)
 
 
 
@@ -116,30 +116,30 @@ Kimi以强大的长文本能力，文件上传和联网搜索能力（以及cont
 你可以在Obsidian下查看[AI Project View](AI%20Project%20View.md)以浏览感兴趣的其他设置和插件介绍。
 
 下载安装包（git clone有时会卡住）
-![下载仓库压缩包](下载仓库压缩包.png)
+![下载仓库压缩包](docs/attachment/img/下载仓库压缩包.png)
 
 解压缩到你想要的位置，通过压缩包下载后解压将不会有.git文件夹。如果你会使用git则可自行修改仓库名称并添加到repo。
 
 ## 使用Obsidian打开
-![|280](使用Obsidian打开本地仓库.png)
+![|280](docs/attachment/img/使用Obsidian打开本地仓库.png)
 
 我建议从这一步开始就在Obsidian里查看本教程并进行其他操作。
 
 ## 配置Ollama
 
 ### Windows
-![DownloadOllama|600](DownloadOllama.png)
+![DownloadOllama|600](docs/attachment/img/DownloadOllama.png)
 
 `win+r`呼出
 win+R输入cmd运行enter确定
-![|350](win+R输入cmd运行enter确定.png)
+![|350](docs/attachment/img/win+R输入cmd运行enter确定.png)
 
 输入
 ```bash
 ollama list
 ```
 
-![](docs/attachment/ollama_list.png)
+![](docs/attachment/img/ollama_list.png)
 
 如果你刚下载Ollama，那么应当只有NAME-ID-SIZE-MODIFIED一行,没有其他的模型。
 
@@ -168,3 +168,6 @@ sudo snap install ollama
 
 使用本仓库
 
+# 多余的话
+
+为了保证README能在repo上完整呈现，我将所有照片等附件都改为了相对路径，例如：`![](docs/attachment/img/kimi.png)`。可在设置中重新设置为最简形式，形如：`[[Kimi]]`或者 `Kimi.png`。

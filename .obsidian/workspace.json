@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "png",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +100,8 @@
               "title": "Surfing Tab Tree"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -135,25 +136,25 @@
   },
   "active": "b7d9fc6cd0ef753d",
   "lastOpenFiles": [
-    "docs/attachment/Obsidian-Surging-DarkMode.png",
-    "README.md",
-    "docs/attachment/Obsidian-Surfing-Kimi.png",
-    "docs/AI Plugins/Text Generator.md",
-    "_Workspace/示例1：阅读知乎文章+做笔记.md",
-    "docs/attachment/Copilot 文档中总结内容.png",
-    "AI Project View.md",
+    "docs/Git packup.md",
     "docs/BaseLLM/Kimi.md",
+    "_Workspace/示例1：阅读知乎文章+做笔记.md",
+    "README.md",
+    "docs/attachment/img/下载仓库压缩包.png",
+    "docs/attachment/img/使用Obsidian打开本地仓库.png",
+    "docs/attachment/img/win+R输入cmd运行enter确定.png",
+    "docs/attachment/img/ollama_pull_llama3.2_.png",
+    "docs/attachment/img/ollama_list.png",
+    "docs/attachment/img/Obsidian-Surging-DarkMode.png",
+    "docs/attachment/img/Obsidian-Surfing-Kimi.png",
+    "docs/attachment/img/DownloadOllama.png",
+    "docs/attachment/img/Copilot 文档中总结内容.png",
+    "docs/attachment/Obsidian-Surging-DarkMode.png",
+    "docs/AI Plugins/Text Generator.md",
+    "AI Project View.md",
     "Chats/New Chat.md",
     "Chats",
     "README_EN.md",
-    "docs/attachment/使用Obsidian打开本地仓库.png",
-    "docs/attachment/ollama_pull_llama3.2.png",
-    "docs/attachment/ollama_pull_llama3.2_.png",
-    "docs/attachment/ollama_list.png",
-    "docs/attachment/win+R输入cmd运行enter确定.png",
-    "docs/attachment/下载仓库压缩包.png",
-    "docs/attachment/DownloadOllama.png",
-    "docs/Git packup.md",
     "docs/Kanban.md",
     "docs/Surfing.md",
     "docs/CSS & Typesetting.md",
@@ -164,7 +165,6 @@
     "docs/attachment",
     "Workspace/未命名.md",
     "About/未命名.md",
-    "docs/attachment/img/直接删去git插件.png",
     "_Workspace",
     "About/未命名",
     "About/Plugins/未命名.md",

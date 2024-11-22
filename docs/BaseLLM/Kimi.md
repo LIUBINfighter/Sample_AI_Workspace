@@ -8,7 +8,7 @@
 
 [点击此页面进入Moonshot AI控制台](https://platform.moonshot.cn/console)
 
-![[Kimi_API_keys获取.png]]
+![](docs/attachment/img/Kimi_API_keys获取.png)
 
 获取密钥后请妥善保存，密钥不会再次显示。如果遗漏则建议删除后新建一个，并修改相应设置。
 
