@@ -11,6 +11,7 @@ kanban-plugin: board
 - [ ] 本地LLM服务：[[Ollama]]
 - [ ] 在线LLM服务示例：[[Kimi]]
 - [ ] 问答类型：[[Copilot]]
+- [ ] 文档写作: [Text Generator](docs/AI%20Plugins/Text%20Generator.md)
 
 
 ## Infrastructure

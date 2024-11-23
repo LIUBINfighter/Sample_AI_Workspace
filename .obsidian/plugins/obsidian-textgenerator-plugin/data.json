@@ -4,12 +4,12 @@
   "models": [],
   "api_key": "",
   "encrypt_keys": false,
-  "selectedProvider": "Default (Custom) 1",
-  "max_tokens": 500,
+  "selectedProvider": "Ollama (Langchain)",
+  "max_tokens": 2048,
   "temperature": 0.7,
   "frequency_penalty": 0.5,
   "showStatusBar": true,
-  "outputToBlockQuote": false,
+  "outputToBlockQuote": true,
   "freeCursorOnStreaming": false,
   "allowJavascriptRun": false,
   "experiment": false,
@@ -85,13 +85,8 @@
     "ImageExtractorEmbded": true,
     "ImageExtractor": true
   },
-  "displayErrorInEditor": false,
-  "LLMProviderProfiles": {
-    "Default (Custom) 1": {
-      "extends": "Default (Custom)",
-      "name": "ollama"
-    }
-  },
+  "displayErrorInEditor": true,
+  "LLMProviderProfiles": {},
   "LLMProviderOptions": {
     "whisper": {
       "base_path": "https://api.openai.com/v1",
@@ -114,18 +109,9 @@
       "streamable": true,
       "CORSBypass": true
     },
-    "Default (Custom) 1": {
-      "endpoint": "https://localhost:11434",
-      "custom_header": "{\n    \"Content-Type\": \"application/json\",\n    authorization: \"Bearer {{api_key}}\"\n}",
-      "custom_body": "{\n    model: \"{{model}}\",\n    temperature: {{temperature}},\n    top_p: {{top_p}},\n    frequency_penalty: {{frequency_penalty}},\n    presence_penalty: {{presence_penalty}},\n    max_tokens: {{max_tokens}},\n    n: {{n}},\n    stream: {{stream}},\n    stop: \"{{stop}}\",\n    messages: {{stringify messages}}\n}",
-      "model": "llama3.2",
-      "sanatization_streaming": "// catch error\nif (res.status >= 300) {\n  const err = data?.error?.message || JSON.stringify(data);\n  throw err;\n}\nlet resultTexts = [];\nconst lines = this.chunk.split(\"\\ndata: \");\n\nconst parsedLines = lines\n    .map((line) => line.replace(/^data: /, \"\").trim()) // Remove the \"data: \" prefix\n    .filter((line) => line !== \"\" && line !== \"[DONE]\") // Remove empty lines and \"[DONE]\"\n    .map((line) => {\n        try {\n            return JSON.parse(line)\n        } catch { }\n    }) // Parse the JSON string\n    .filter(Boolean);\n\nfor (const parsedLine of parsedLines) {\n    const { choices } = parsedLine;\n    const { delta } = choices[0];\n    const { content } = delta;\n    // Update the UI with the new content\n    if (content) {\n        resultTexts.push(content);\n    }\n}\nreturn resultTexts.join(\"\");",
-      "sanatization_response": "// catch error\nif (res.status >= 300) {\n  const err = data?.error?.message || JSON.stringify(data);\n  throw err;\n}\n\n// get choices\nconst choices = (data.choices || data).map(c=> c.message);\n\n// the return object should be in the format of \n// { content: string }[] \n// if there's only one response, put it in the array of choices.\nreturn choices;",
-      "frequency_penalty": 0,
-      "presence_penalty": 0.5,
-      "top_p": 1,
-      "streamable": true,
-      "CORSBypass": true
+    "Ollama (Langchain)": {
+      "basePath": "http://localhost:11434",
+      "model": "llama3.2"
     }
   },
   "LLMProviderOptionsKeysHashed": {}

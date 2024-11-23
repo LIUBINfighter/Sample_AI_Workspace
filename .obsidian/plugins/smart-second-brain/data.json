@@ -29,7 +29,7 @@
   "ollamaEmbedModel": {
     "model": "nomic-embed-text",
     "baseUrl": "http://localhost:11434",
-    "similarityThreshold": 0.27,
+    "similarityThreshold": 0.45,
     "k": 100
   },
   "openAIGenModel": {

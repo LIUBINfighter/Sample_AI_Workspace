@@ -1,7 +1,7 @@
 {
   "providers": {
     "ollama": {
-      "defaultModel": "llama3.1",
+      "defaultModel": "llama3.2",
       "type": "ollama",
       "embeddingModel": "nomic-embed-text",
       "url": "http://localhost:11434"

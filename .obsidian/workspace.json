@@ -8,37 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d6ceca00feea81f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/BaseLLM/Kimi.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Kimi"
-            }
-          },
-          {
             "id": "b7d9fc6cd0ef753d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "_Workspace/Example-Summary.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Example-Summary"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,22 +145,43 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "_Workspace/Example-Summary.md"
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "Example-Summary 的大纲"
+            }
+          },
+          {
+            "id": "2fe1c492f48ef588",
+            "type": "leaf",
+            "state": {
+              "type": "chat-view",
+              "state": {
+                "file": "Chats/New Chat.md"
+              },
+              "icon": "message-square",
+              "title": "New Chat"
+            }
+          },
+          {
+            "id": "8b38028c95304140",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 406.5,
-    "collapsed": true
+    "width": 406.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "copilot:Copilot Chat": false,
       "obsidian-git:Open Git source control": false,
       "daily-notes:打开/创建今天的日记": false,
       "workspaces:管理工作区布局": true,
@@ -186,17 +191,27 @@
       "command-palette:打开命令面板": true,
       "random-note:开始漫游笔记": true,
       "audio-recorder:开始/结束录音": true,
-      "smart-second-brain:打开 S2B 聊天": false,
       "graph:查看关系图谱": false,
       "obsidian-kanban:创建新看板": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "smart-second-brain:打开 S2B 聊天": false,
+      "copilot:Copilot Chat": false
     }
   },
   "active": "b7d9fc6cd0ef753d",
   "lastOpenFiles": [
-    "README_EN.md",
     "README.md",
+    "AI Project View.md",
+    "README_EN.md",
+    "_Workspace/Example2-阅读知乎文章+做笔记.md",
+    "_Workspace/Example-Summary.md",
+    "docs/attachment/Second2Brain-Sidebar.png",
+    "Example-Summary README.md",
+    "Chats/New Chat.md",
+    "docs/BaseLLM/Kimi.md",
+    "docs/attachment/img/LocalGPT-README.png",
+    "docs/attachment/img/LocalGPT-README.png",
     "docs/AI Plugins/Local GPT.md",
     "docs/AI Plugins/Smart2Brain.md",
     "docs/AI Plugins/Text Generator.md",
@@ -215,8 +230,6 @@
     "textgenerator/templates",
     "textgenerator",
     "docs/Git packup.md",
-    "docs/BaseLLM/Kimi.md",
-    "_Workspace/示例1：阅读知乎文章+做笔记.md",
     "docs/attachment/img/下载仓库压缩包.png",
     "docs/attachment/img/使用Obsidian打开本地仓库.png",
     "docs/attachment/img/win+R输入cmd运行enter确定.png",
@@ -224,17 +237,9 @@
     "docs/attachment/img/ollama_list.png",
     "docs/attachment/img/Obsidian-Surging-DarkMode.png",
     "docs/attachment/img/Obsidian-Surfing-Kimi.png",
-    "docs/attachment/img/DownloadOllama.png",
-    "docs/attachment/img/Copilot 文档中总结内容.png",
-    "docs/attachment/Obsidian-Surging-DarkMode.png",
-    "AI Project View.md",
-    "Chats/New Chat.md",
     "Chats",
     "docs/Kanban.md",
     "docs/Surfing.md",
-    "docs/CSS & Typesetting.md",
-    "docs/BaseLLM/Ollama.md",
-    "docs/AI Plugins/Copilot.md",
     "docs/attachment",
     "_Workspace",
     "About/未命名",

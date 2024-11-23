@@ -1,4 +1,5 @@
 {
+  "plusLicenseKey": "",
   "openAIApiKey": "",
   "openAIOrgId": "",
   "huggingfaceApiKey": "",
@@ -12,8 +13,8 @@
   "googleApiKey": "",
   "openRouterAiApiKey": "",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "llama3.2|ollama",
-  "embeddingModelKey": "nomic-embed-text|ollama",
+  "defaultModelKey": "ollama-llama3.2|ollama",
+  "embeddingModelKey": "text-embedding-3-small|openai",
   "temperature": 0.1,
   "maxTokens": 1000,
   "contextTurns": 15,
@@ -119,13 +120,13 @@
       "apiKey": ""
     },
     {
-      "name": "llama3.2",
+      "name": "ollama-llama3.2",
       "provider": "ollama",
-      "baseUrl": "https://localhost:11434",
+      "baseUrl": "http://localhost:11434",
       "apiKey": "",
       "enabled": true,
       "isBuiltIn": false,
-      "enableCors": true,
+      "enableCors": false,
       "isEmbeddingModel": false
     }
   ],
@@ -136,59 +137,39 @@
       "enabled": true,
       "isBuiltIn": true,
       "isEmbeddingModel": true,
-      "core": true,
-      "baseUrl": "",
-      "apiKey": ""
+      "core": true
     },
     {
       "name": "text-embedding-3-large",
       "provider": "openai",
       "enabled": true,
       "isBuiltIn": true,
-      "isEmbeddingModel": true,
-      "baseUrl": "",
-      "apiKey": ""
+      "isEmbeddingModel": true
     },
     {
       "name": "embed-multilingual-light-v3.0",
       "provider": "cohereai",
       "enabled": true,
       "isBuiltIn": true,
-      "isEmbeddingModel": true,
-      "baseUrl": "",
-      "apiKey": ""
+      "isEmbeddingModel": true
     },
     {
       "name": "text-embedding-004",
       "provider": "google",
       "enabled": true,
       "isBuiltIn": true,
-      "isEmbeddingModel": true,
-      "baseUrl": "",
-      "apiKey": ""
+      "isEmbeddingModel": true
     },
     {
       "name": "azure-openai",
       "provider": "azure_openai",
       "enabled": true,
       "isBuiltIn": true,
-      "isEmbeddingModel": true,
-      "baseUrl": "",
-      "apiKey": ""
-    },
-    {
-      "name": "nomic-embed-text",
-      "provider": "ollama",
-      "baseUrl": "0.0.0.0:11434",
-      "apiKey": "",
-      "enabled": true,
-      "isBuiltIn": false,
-      "enableCors": false,
       "isEmbeddingModel": true
     }
   ],
   "embeddingRequestsPerSecond": 10,
-  "disableIndexOnMobile": false,
+  "disableIndexOnMobile": true,
   "enabledCommands": {
     "fix-grammar-prompt": {
       "enabled": true,

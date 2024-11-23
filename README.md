@@ -60,19 +60,25 @@ Obsidian仓库设置，当然要以插件为主啦！所以我们优先介绍插
 
 ## 功能介绍
 
-| Name                                                    | 边栏QA | 选定内容输入        | 阅读<br>.md  | 多文件               | 外链跳转           | 定制提示词                 | 定制传输格式 |
-| ------------------------------------------------------- | ---- | ------------- | ---------- | ----------------- | -------------- | --------------------- | ------ |
-| [Text Generator](docs/AI%20Plugins/Text%20Generator.md) |      |               |            |                   |                |                       | 完全定制   |
-| [Local GPT](docs/AI%20Plugins/Local%20GPT.md)           | ❌    | ✔<br>选中+自设快捷键 | ✔          | ❌<br>只支持在编辑的文档中解读 | ❌不能多文件联动       | 🔥插件面板设置<br>+社区支持     | ❌      |
-| [Copilot](docs/AI%20Plugins/Copilot.md)                 | ✔    | ✔<br>选中+右键    | ✔<br>提示词模板 | ✔<br>可调整文件数       | ✔较准确<br>❌跳转抽风  | 只支持1种自定义System Prompt | ❌      |
-| [Smart2Brain](docs/AI%20Plugins/Smart2Brain.md)         | ✔    | ❌<br>手动复制粘贴   | ✔          | ✔<br>可调整相似度       | 🤔不太准<br>✔跳转稳定 | ❌                     | ❌      |
-|                                                         |      |               |            |                   |                |                       |        |
+| Name                                                    | 边栏QA | 选定内容输入        | 阅读<br>.md  | 多文件               | 外链跳转           | 定制提示词                 | 定制传输格式     |
+| ------------------------------------------------------- | ---- | ------------- | ---------- | ----------------- | -------------- | --------------------- | ---------- |
+| [Text Generator](docs/AI%20Plugins/Text%20Generator.md) | ❌    | ✔             | ✔          | ❌                 | ❌              | ✔                     | ✔已有模板+自由定制 |
+| [Local GPT](docs/AI%20Plugins/Local%20GPT.md)           | ❌    | ✔<br>选中+自设快捷键 | ✔          | ❌<br>只支持在编辑的文档中解读 | ❌不能多文件联动       | 🔥插件面板设置<br>+社区支持     | ❌          |
+| [Copilot](docs/AI%20Plugins/Copilot.md)                 | ✔    | ✔<br>选中+右键    | ✔<br>提示词模板 | ✔<br>可调整文件数       | ✔较准确<br>❌跳转抽风  | 只支持1种自定义System Prompt | ❌          |
+| [Smart2Brain](docs/AI%20Plugins/Smart2Brain.md)         | ✔    | ❌<br>手动复制粘贴   | ✔          | ✔<br>可调整相似度       | 🤔不太准<br>✔跳转稳定 | ❌                     | ❌          |
 
 ## 主观评价
 
+| Name                                                    |                          |
+| ------------------------------------------------------- | ------------------------ |
+| [Text Generator](docs/AI%20Plugins/Text%20Generator.md) | 热爱折腾必备，定制化程度取决于耐心和技术文档   |
+| [Local GPT](docs/AI%20Plugins/Local%20GPT.md)           | 使用最频繁，快捷键调用提示词模板超好用，脱离鼠标 |
+| [Copilot](docs/AI%20Plugins/Copilot.md)                 |                          |
+| [Smart2Brain](docs/AI%20Plugins/Smart2Brain.md)         | 多文件阅读挺不错，但是插件容易莫名其妙崩溃    |
 
+## 效果示意
 
-
+[Example-Summary README](Example-Summary README.md)
 
 
 # QA&Writing
@@ -183,4 +189,3 @@ sudo snap install ollama
 为了保证README能在repo上完整呈现，我将所有照片等附件都改为了完整相对路径，例如：`![](docs/attachment/img/kimi.png)`。可在设置中重新设置为最简形式，形如：`[[Kimi]]`或者 `![[Kimi.png]]`。
 
 文档中不定期出现链接错误，是由于Obsidian本地使用和github在线阅读之间的取舍不同。你可以在issue区写下问题和你的建议。
-
