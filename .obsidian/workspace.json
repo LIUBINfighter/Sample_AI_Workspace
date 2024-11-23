@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3c18ac4062542a85",
+        "id": "9b54a981100eb0d1",
         "type": "tabs",
         "children": [
           {
-            "id": "223aec72fc2372d3",
+            "id": "7cdc4643e225079b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,66 +20,6 @@
               },
               "icon": "lucide-file",
               "title": "README"
-            }
-          },
-          {
-            "id": "71bd1d45d6f51d33",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://www.obsidiancopilot.com/en"
-              },
-              "icon": "lucide-file",
-              "title": "Copilot for Obsidian"
-            }
-          },
-          {
-            "id": "6ffe3f1efd687a42",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://github.com/your-papa/obsidian-Smart2Brain?tab=AGPL-3.0-1-ov-file"
-              },
-              "icon": "lucide-file",
-              "title": "GitHub - your-papa/obsidian-Smart2Brain: An Obsidian plugin to interact with your privacy focused AI-Assistant making your second brain even smarter!"
-            }
-          },
-          {
-            "id": "3355341a0e4b773e",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://github.com/nhaouari/obsidian-textgenerator-plugin"
-              },
-              "icon": "lucide-file",
-              "title": "GitHub - nhaouari/obsidian-textgenerator-plugin: Text Generator is a versatile plugin for Obsidian that allows you to generate text content using various AI providers, including OpenAI, Anthropic, Google and local models."
-            }
-          },
-          {
-            "id": "58951e4c3aa8ba08",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://text-gen.com/"
-              },
-              "icon": "lucide-file",
-              "title": "TextGen"
-            }
-          },
-          {
-            "id": "3c481385561d758b",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://docs.text-gen.com/"
-              },
-              "icon": "lucide-file",
-              "title": "0- Introduction - Text Generator Plugin"
             }
           }
         ]
@@ -148,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.49999618530273
+    "width": 245.49999618530273,
+    "collapsed": true
   },
   "right": {
     "id": "abbdd87168af714f",
@@ -221,8 +162,7 @@
               "title": "Copilot"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -242,14 +182,17 @@
       "audio-recorder:开始/结束录音": true,
       "graph:查看关系图谱": false,
       "obsidian-kanban:创建新看板": false,
+      "smart-second-brain:打开 S2B 聊天": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
-      "smart-second-brain:打开 S2B 聊天": false,
       "copilot:Copilot Chat": false
     }
   },
-  "active": "223aec72fc2372d3",
+  "active": "7cdc4643e225079b",
   "lastOpenFiles": [
+    "docs/attachment/Pasted image 20241123182559.png",
+    "docs/attachment/OllamaTestllama3.2.png",
+    "docs/AI Project View.md",
     "README.md",
     "docs/BaseLLM/Kimi.md",
     "docs/attachment/img/Kimi-Textgenerator联动.png",
@@ -258,7 +201,6 @@
     "_Workspace/copilot-conversations",
     "_Workspace/Chats/pobsidian_ai_workflow_summaryp.md",
     "_Workspace/Chats/New Chat.md",
-    "docs/AI Project View.md",
     "docs/Git以及本地化.md",
     "docs/attachment/img/重建仓库缓存.png",
     "docs/attachment/img/删去.git文件夹以及.gitignore.png",
@@ -288,7 +230,6 @@
     "_Workspace/textgenerator/templates",
     "_Workspace/textgenerator",
     "docs/attachment/img/下载仓库压缩包.png",
-    "docs/attachment/img/使用Obsidian打开本地仓库.png",
     "_Workspace/Chats",
     "docs/attachment",
     "_Workspace",

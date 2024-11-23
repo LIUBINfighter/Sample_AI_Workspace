@@ -155,7 +155,15 @@ ollama list
 
 ![](docs/attachment/img/ollama_pull_llama3.2_.png)
 
-我C盘够大，模型随便下。但是如果C盘本来空间不多，可能需要修改ollama配置使得模型文件保存在其他位置。
+我C盘够大，模型随便下。但是如果C盘本来空间不多，需要修改ollama配置使得模型文件保存在其他位置。
+
+检查下能否跑起来：
+
+```bash
+ollama run llama3.2
+```
+
+![](docs/attachment/OllamaTestllama3.2.png)
 
 ### Ubuntu
 
