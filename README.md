@@ -32,10 +32,11 @@ Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务
     看板插件，所有文档分类一目了然
 - [Surfing](Surfing.md)
     在Obsidian中内置浏览器，进行搜索和在线LLM使用（Kimi赛高！）
-- [Git](docs/Git.md)
+- [Git以及本地化](docs/Git以及本地化.md)
     远程同步github仓库，保存你的项目进度
     （保持本地化可直接zip下载/取消/删除插件）
 
+>对本地化有执念？担心仓库联网？请查阅：[Git以及本地化](docs/Git以及本地化.md)文档.
 
 # 插件横纵对比
 
@@ -49,6 +50,9 @@ Obsidian仓库设置，当然要以插件为主啦！所以我们优先介绍插
 
 ## 基本情况
 
+Name一栏为本仓库文档，Repo为插件github repo地址。
+
+
 | Name                                                    | Repo                                                                                                | Download | Star | Update      |
 | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------- | ---- | ----------- |
 | [Text Generator](docs/AI%20Plugins/Text%20Generator.md) | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) | 335k     | 1.5k | 3weeks ago  |
@@ -60,6 +64,8 @@ Obsidian仓库设置，当然要以插件为主啦！所以我们优先介绍插
 
 ## 功能介绍
 
+对这些细节有疑惑？我会在每个插件单独的文档中详细解释。
+
 | Name                                                    | 边栏QA | 选定内容输入        | 阅读<br>.md  | 多文件               | 外链跳转           | 定制提示词                 | 定制传输格式     |
 | ------------------------------------------------------- | ---- | ------------- | ---------- | ----------------- | -------------- | --------------------- | ---------- |
 | [Text Generator](docs/AI%20Plugins/Text%20Generator.md) | ❌    | ✔             | ✔          | ❌                 | ❌              | ✔                     | ✔已有模板+自由定制 |
@@ -69,21 +75,16 @@ Obsidian仓库设置，当然要以插件为主啦！所以我们优先介绍插
 
 ## 主观评价
 
-| Name                                                    |                          |
-| ------------------------------------------------------- | ------------------------ |
-| [Text Generator](docs/AI%20Plugins/Text%20Generator.md) | 热爱折腾必备，定制化程度取决于耐心和技术文档   |
-| [Local GPT](docs/AI%20Plugins/Local%20GPT.md)           | 使用最频繁，快捷键调用提示词模板超好用，脱离鼠标 |
-| [Copilot](docs/AI%20Plugins/Copilot.md)                 |                          |
-| [Smart2Brain](docs/AI%20Plugins/Smart2Brain.md)         | 多文件阅读挺不错，但是插件容易莫名其妙崩溃    |
+| Name                                                    |                                         |
+| ------------------------------------------------------- | --------------------------------------- |
+| [Text Generator](docs/AI%20Plugins/Text%20Generator.md) | 热爱折腾必备，定制化程度取决于耐心和技术文档，接入Kimi需要看文档调body |
+| [Local GPT](docs/AI%20Plugins/Local%20GPT.md)           | 使用最频繁，快捷键调用定制提示词模板超好用，脱离鼠标              |
+| [Copilot](docs/AI%20Plugins/Copilot.md)                 | 有概括菜单栏以及聊天+仓库问答格式,但是跳转经常不成功             |
+| [Smart2Brain](docs/AI%20Plugins/Smart2Brain.md)         | 多文件阅读挺不错，也会提供地址跳转，简单快速，但是插件容易莫名其妙崩溃     |
 
 ## 效果示意
 
 [Example-Summary README](_Workspace/Example-Summary.md)
-
-
-# QA&Writing
-
-
 
 ## Copilot
 
@@ -111,17 +112,13 @@ Kimi以强大的长文本能力，文件上传和联网搜索能力（以及cont
 ![](docs/attachment/img/Obsidian-Surging-DarkMode.png)
 
 
-
-
-
-# 样例工作流介绍
-
+如果你想要接入API，请参考：[Kimi](docs/BaseLLM/Kimi.md)
 
 # 快速开始
 
 本栏目是为了快速使用配置最简单基础，最快速的LocalGPT插件。
 
-你可以在Obsidian下查看[AI Project View](AI%20Project%20View.md)以浏览感兴趣的其他设置和插件介绍。
+你可以在Obsidian下查看[AI Project View](docs/AI%20Project%20View.md)以浏览感兴趣的其他设置和插件介绍。
 
 下载安装包（git clone有时会卡住）
 ![下载仓库压缩包](docs/attachment/img/下载仓库压缩包.png)
@@ -135,7 +132,6 @@ Kimi以强大的长文本能力，文件上传和联网搜索能力（以及cont
 打开后你可以在Obsidian里阅读本教程了。当然，别急着关网页！涉及Obsidian设置一类操作的时候还是要看网页的。我建议从这一步之后就在Obsidian里查看本教程并进行其他操作。
 
 插件已经预设完成，我们去配置Ollama作为本地LLM服务。
-
 
 ## 配置Ollama
 
@@ -171,9 +167,6 @@ sudo snap install ollama
 
 更多个性化配置参考[Ollama](docs/BaseLLM/Ollama.md)以及Ollama官网 https://ollama.com/
 
-
-
-
 # 多余的话
 
 ## Obsidian链接与Git Repo
@@ -181,3 +174,22 @@ sudo snap install ollama
 为了保证README能在repo上完整呈现，我将所有照片等附件都改为了完整相对路径，例如：`![](docs/attachment/img/kimi.png)`。可在设置中重新设置为最简形式，形如：`[[Kimi]]`或者 `![[Kimi.png]]`。
 
 文档中不定期出现链接错误，是由于Obsidian本地使用和github在线阅读之间的取舍不同。你可以在issue区写下问题和你的建议。
+
+# 外链
+
+## Obsidian Plugin
+
+| Name           | Github Repo                                                                                         | doc/wiki                                                                                                                                            |
+| -------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Text Generator | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) | - https://text-gen.com/<br>- https://docs.text-gen.com/                                                                                             |
+| Local GPT      | [pfrankov/obsidian-local-gpt](https://github.com/pfrankov/obsidian-local-gpt)                       |                                                                                                                                                     |
+| Copilot        | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot)                       | - [obsidian copilot](https://www.obsidiancopilot.com/en)<br>- [Documentation \| Copilot for Obsidian ](https://www.obsidiancopilot.com/en/docs)<br> |
+| Smart2Brain    | [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain)                 |                                                                                                                                                     |
+
+## LLM Provider
+
+| Name     | Docs                                                                                                               | 在线使用Kimi                                                                                                                                  |
+| -------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Moonshot | [Moonshot AI 开放平台](https://platform.moonshot.cn/docs/intro#%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B) | [Kimi.ai - 会推理解析，能深度思考的AI助手 (moonshot.cn)](https://kimi.moonshot.cn/)                                                                     |
+|          | 官网                                                                                                                 | Github Repo                                                                                                                               |
+| Ollama   | [Ollama](https://ollama.com/)                                                                                      | [ollama/ollama: Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models. ](https://github.com/ollama/ollama) |
