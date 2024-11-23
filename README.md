@@ -118,6 +118,11 @@ Kimi以强大的长文本能力，文件上传和联网搜索能力（以及cont
 
 本栏目是为了快速使用配置最简单基础，最快速的LocalGPT插件。
 
+本地部署推荐配置：
+
+> 显存>=8G
+> 内存>=16G
+
 你可以在Obsidian下查看[AI Project View](docs/AI%20Project%20View.md)以浏览感兴趣的其他设置和插件介绍。
 
 下载安装包（git clone有时会卡住）
@@ -134,6 +139,14 @@ Kimi以强大的长文本能力，文件上传和联网搜索能力（以及cont
 插件已经预设完成，我们去配置Ollama作为本地LLM服务。
 
 ## 配置Ollama
+
+### Ubuntu
+
+我们用snap下载ollama，其他操作和windows没有太大区别。
+
+```bash
+sudo snap install ollama
+```
 
 ### Windows
 ![DownloadOllama|600](docs/attachment/img/DownloadOllama.png)
@@ -165,13 +178,19 @@ ollama run llama3.2
 
 ![](docs/attachment/OllamaTestllama3.2.png)
 
-### Ubuntu
+如果响应很快，那么接下来接入插件的相应速度应该也不错。
 
-我们用snap下载ollama，其他操作和windows没有太大区别。
+## 使用LocalGPT
 
-```bash
-sudo snap install ollama
-```
+预设快捷键为`ctrl+alt+g`呼出选项卡。
+
+![LocalGPT-README|](docs/attachment/img/LocalGPT-README.png)
+
+可以手动选中输入内容，不选中则为整个文件的文字为输入。
+
+在插件设置面板中查看LocalGPTAction：
+
+![](docs/attachment/img/查看LocalGPTAction.png)
 
 更多个性化配置参考[Ollama](docs/BaseLLM/Ollama.md)以及Ollama官网 https://ollama.com/
 

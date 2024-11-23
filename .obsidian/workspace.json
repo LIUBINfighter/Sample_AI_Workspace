@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.49999618530273,
-    "collapsed": true
+    "width": 245.49999618530273
   },
   "right": {
     "id": "abbdd87168af714f",
@@ -188,8 +187,10 @@
       "copilot:Copilot Chat": false
     }
   },
-  "active": "7cdc4643e225079b",
+  "active": "f4d0e98caad1d6ae",
   "lastOpenFiles": [
+    "docs/attachment/img/OllamaTestllama3.2.png",
+    "docs/attachment/img/查看LocalGPTAction.png",
     "docs/attachment/Pasted image 20241123182559.png",
     "docs/attachment/OllamaTestllama3.2.png",
     "docs/AI Project View.md",
@@ -212,7 +213,6 @@
     "docs/attachment/img/Second2Brain-Sidebar.png",
     "Example-Summary README.md",
     "docs/attachment/img/LocalGPT-README.png",
-    "docs/attachment/img/LocalGPT-README.png",
     "docs/AI Plugins/Local GPT.md",
     "docs/AI Plugins/Smart2Brain.md",
     "docs/AI Plugins/Text Generator.md",
@@ -229,7 +229,6 @@
     "_Workspace/textgenerator/templates/default",
     "_Workspace/textgenerator/templates",
     "_Workspace/textgenerator",
-    "docs/attachment/img/下载仓库压缩包.png",
     "_Workspace/Chats",
     "docs/attachment",
     "_Workspace",
