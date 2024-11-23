@@ -32,7 +32,7 @@ Obsidian的学习曲线本就比较陡峭，如果再加上自己部署LLM服务
     看板插件，所有文档分类一目了然
 - [Surfing](Surfing.md)
     在Obsidian中内置浏览器，进行搜索和在线LLM使用（Kimi赛高！）
-- [Git packup](Git%20packup.md)
+- [Git](docs/Git.md)
     远程同步github仓库，保存你的项目进度
     （保持本地化可直接zip下载/取消/删除插件）
 
@@ -78,7 +78,7 @@ Obsidian仓库设置，当然要以插件为主啦！所以我们优先介绍插
 
 ## 效果示意
 
-[Example-Summary README](Example-Summary README.md)
+[Example-Summary README](_Workspace/Example-Summary.md)
 
 
 # QA&Writing
@@ -102,7 +102,7 @@ Ollama目前是本地部署LLM的首选之一。操作以及对接插件非常�
 
 Kimi以强大的长文本能力，文件上传和联网搜索能力（以及context window <20w字免费）占据了独特的C端生态位（反正我是不能没有Kimi了）。
 
-在Obsidian中如果按照常规的思路去使用api，那正是太屈才了！但是开两个窗口分屏实在是太麻烦了，能不能再Obsidian里使用Kimi呢？我们使用[Surfing](Surfing.md)插件就可以将Obsidian变为浏览器。目前本仓库的设置下你应当可以在Obsidian里直接打开以下链接：[kimi.moonshot](https://kimi.moonshot.cn/).
+在Obsidian中如果按照常规的思路去使用api，那真是太屈才了！但是开两个窗口分屏实在是太麻烦了，能不能再Obsidian里使用Kimi呢？我们使用[Surfing](Surfing.md)插件就可以将Obsidian变为浏览器。目前本仓库的设置下你应当可以在Obsidian里直接打开以下链接：[kimi.moonshot](https://kimi.moonshot.cn/).
 
 ![](docs/attachment/img/Obsidian-Surfing-Kimi.png)
 
@@ -172,15 +172,7 @@ sudo snap install ollama
 更多个性化配置参考[Ollama](docs/BaseLLM/Ollama.md)以及Ollama官网 https://ollama.com/
 
 
-# 本地 vs 在线
 
-
-
-
-
-
-
-使用本仓库
 
 # 多余的话
 

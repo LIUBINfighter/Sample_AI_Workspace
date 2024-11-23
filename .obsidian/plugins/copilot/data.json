@@ -13,8 +13,8 @@
   "googleApiKey": "",
   "openRouterAiApiKey": "",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "ollama-llama3.2|ollama",
-  "embeddingModelKey": "text-embedding-3-small|openai",
+  "defaultModelKey": "llama3.2|ollama",
+  "embeddingModelKey": "nomic-embed-text|ollama",
   "temperature": 0.1,
   "maxTokens": 1000,
   "contextTurns": 15,
@@ -120,7 +120,7 @@
       "apiKey": ""
     },
     {
-      "name": "ollama-llama3.2",
+      "name": "llama3.2",
       "provider": "ollama",
       "baseUrl": "http://localhost:11434",
       "apiKey": "",
@@ -137,34 +137,54 @@
       "enabled": true,
       "isBuiltIn": true,
       "isEmbeddingModel": true,
-      "core": true
+      "core": true,
+      "baseUrl": "",
+      "apiKey": ""
     },
     {
       "name": "text-embedding-3-large",
       "provider": "openai",
       "enabled": true,
       "isBuiltIn": true,
-      "isEmbeddingModel": true
+      "isEmbeddingModel": true,
+      "baseUrl": "",
+      "apiKey": ""
     },
     {
       "name": "embed-multilingual-light-v3.0",
       "provider": "cohereai",
       "enabled": true,
       "isBuiltIn": true,
-      "isEmbeddingModel": true
+      "isEmbeddingModel": true,
+      "baseUrl": "",
+      "apiKey": ""
     },
     {
       "name": "text-embedding-004",
       "provider": "google",
       "enabled": true,
       "isBuiltIn": true,
-      "isEmbeddingModel": true
+      "isEmbeddingModel": true,
+      "baseUrl": "",
+      "apiKey": ""
     },
     {
       "name": "azure-openai",
       "provider": "azure_openai",
       "enabled": true,
       "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "baseUrl": "",
+      "apiKey": ""
+    },
+    {
+      "name": "nomic-embed-text",
+      "provider": "ollama",
+      "baseUrl": "http://localhost:11434",
+      "apiKey": "",
+      "enabled": true,
+      "isBuiltIn": false,
+      "enableCors": false,
       "isEmbeddingModel": true
     }
   ],

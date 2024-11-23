@@ -16,7 +16,7 @@ kanban-plugin: board
 
 ## Infrastructure
 
-- [ ] 同步Git仓库[[Git packup]]
+- [ ] 同步Git仓库[[docs/Git]]
 - [ ] [[CSS & Typesetting]]
 - [ ] 浏览网页插件：[[Surfing]]
 - [ ] 看板插件：[[Kanban]]
