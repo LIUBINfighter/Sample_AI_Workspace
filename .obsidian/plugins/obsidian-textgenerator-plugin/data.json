@@ -1,0 +1,132 @@
+{
+  "version": "0.7.42",
+  "endpoint": "https://api.openai.com/v1",
+  "models": [],
+  "api_key": "",
+  "encrypt_keys": false,
+  "selectedProvider": "Default (Custom) 1",
+  "max_tokens": 500,
+  "temperature": 0.7,
+  "frequency_penalty": 0.5,
+  "showStatusBar": true,
+  "outputToBlockQuote": false,
+  "freeCursorOnStreaming": false,
+  "allowJavascriptRun": false,
+  "experiment": false,
+  "promptsPath": "textgenerator/templates",
+  "textGenPath": "textgenerator/",
+  "prefix": "\n\n",
+  "tgSelectionLimiter": "^\\*\\*\\*",
+  "stream": true,
+  "context": {
+    "customInstructEnabled": true,
+    "includeClipboard": true,
+    "customInstruct": "Title: {{title}}\n  \nStarred Blocks: {{starredBlocks}}\n\t  \n{{tg_selection}}",
+    "contextTemplate": "Title: {{title}}\n\t\nStarred Blocks: {{starredBlocks}}\n\t  \n{{tg_selection}}"
+  },
+  "requestTimeout": 300000,
+  "options": {
+    "generate-text": true,
+    "generate-text-with-metadata": true,
+    "insert-generated-text-From-template": true,
+    "create-generated-text-From-template": false,
+    "search-results-batch-generate-from-template": true,
+    "insert-text-From-template": false,
+    "create-text-From-template": false,
+    "show-modal-From-template": true,
+    "open-template-as-tool": true,
+    "open-playground": true,
+    "set_max_tokens": true,
+    "set-llm": true,
+    "set-model": true,
+    "packageManager": true,
+    "create-template": false,
+    "get-title": true,
+    "generated-text-to-clipboard-From-template": false,
+    "calculate-tokens": true,
+    "calculate-tokens-for-template": true,
+    "text-extractor-tool": true,
+    "stop-stream": true,
+    "custom-instruct": true,
+    "generate-in-right-click-menu": false,
+    "batch-generate-in-right-click-files-menu": true,
+    "tg-block-processor": true,
+    "reload": true,
+    "disable-ribbon-icons": false
+  },
+  "advancedOptions": {
+    "generateTitleInstructEnabled": false,
+    "generateTitleInstruct": "Generate a title for the current document (do not use * \" \\ / < > : | ? .):\n{{substring content 0 255}}",
+    "includeAttachmentsInRequest": false
+  },
+  "autoSuggestOptions": {
+    "customInstructEnabled": true,
+    "customInstruct": "Continue the follwing text:\nTitle: {{title}}\n{{query}}",
+    "isEnabled": false,
+    "allowInNewLine": false,
+    "delay": 300,
+    "numberOfSuggestions": 5,
+    "triggerPhrase": "  ",
+    "stop": ".",
+    "showStatus": true,
+    "customProvider": false,
+    "inlineSuggestions": false,
+    "overrideTrigger": " "
+  },
+  "slashSuggestOptions": {
+    "isEnabled": false,
+    "triggerPhrase": "/"
+  },
+  "extractorsOptions": {
+    "PDFExtractor": true,
+    "WebPageExtractor": true,
+    "YoutubeExtractor": true,
+    "AudioExtractor": false,
+    "ImageExtractorEmbded": true,
+    "ImageExtractor": true
+  },
+  "displayErrorInEditor": false,
+  "LLMProviderProfiles": {
+    "Default (Custom) 1": {
+      "extends": "Default (Custom)",
+      "name": "ollama"
+    }
+  },
+  "LLMProviderOptions": {
+    "whisper": {
+      "base_path": "https://api.openai.com/v1",
+      "model": "whisper-1",
+      "api_key": ""
+    },
+    "OpenAI Chat (Langchain)": {
+      "basePath": "https://api.openai.com/v1"
+    },
+    "Default (Custom)": {
+      "endpoint": "https://localhost:11434",
+      "custom_header": "{\n    \"Content-Type\": \"application/json\",\n    authorization: \"Bearer {{api_key}}\"\n}",
+      "custom_body": "{\n    model: \"{{model}}\",\n    temperature: {{temperature}},\n    top_p: {{top_p}},\n    frequency_penalty: {{frequency_penalty}},\n    presence_penalty: {{presence_penalty}},\n    max_tokens: {{max_tokens}},\n    n: {{n}},\n    stream: {{stream}},\n    stop: \"{{stop}}\",\n    messages: {{stringify messages}}\n}",
+      "model": "llama3.2",
+      "sanatization_streaming": "// catch error\nif (res.status >= 300) {\n  const err = data?.error?.message || JSON.stringify(data);\n  throw err;\n}\nlet resultTexts = [];\nconst lines = this.chunk.split(\"\\ndata: \");\n\nconst parsedLines = lines\n    .map((line) => line.replace(/^data: /, \"\").trim()) // Remove the \"data: \" prefix\n    .filter((line) => line !== \"\" && line !== \"[DONE]\") // Remove empty lines and \"[DONE]\"\n    .map((line) => {\n        try {\n            return JSON.parse(line)\n        } catch { }\n    }) // Parse the JSON string\n    .filter(Boolean);\n\nfor (const parsedLine of parsedLines) {\n    const { choices } = parsedLine;\n    const { delta } = choices[0];\n    const { content } = delta;\n    // Update the UI with the new content\n    if (content) {\n        resultTexts.push(content);\n    }\n}\nreturn resultTexts.join(\"\");",
+      "sanatization_response": "// catch error\nif (res.status >= 300) {\n  const err = data?.error?.message || JSON.stringify(data);\n  throw err;\n}\n\n// get choices\nconst choices = (data.choices || data).map(c=> c.message);\n\n// the return object should be in the format of \n// { content: string }[] \n// if there's only one response, put it in the array of choices.\nreturn choices;",
+      "frequency_penalty": 0,
+      "presence_penalty": 0.5,
+      "top_p": 1,
+      "streamable": true,
+      "CORSBypass": true
+    },
+    "Default (Custom) 1": {
+      "endpoint": "https://localhost:11434",
+      "custom_header": "{\n    \"Content-Type\": \"application/json\",\n    authorization: \"Bearer {{api_key}}\"\n}",
+      "custom_body": "{\n    model: \"{{model}}\",\n    temperature: {{temperature}},\n    top_p: {{top_p}},\n    frequency_penalty: {{frequency_penalty}},\n    presence_penalty: {{presence_penalty}},\n    max_tokens: {{max_tokens}},\n    n: {{n}},\n    stream: {{stream}},\n    stop: \"{{stop}}\",\n    messages: {{stringify messages}}\n}",
+      "model": "llama3.2",
+      "sanatization_streaming": "// catch error\nif (res.status >= 300) {\n  const err = data?.error?.message || JSON.stringify(data);\n  throw err;\n}\nlet resultTexts = [];\nconst lines = this.chunk.split(\"\\ndata: \");\n\nconst parsedLines = lines\n    .map((line) => line.replace(/^data: /, \"\").trim()) // Remove the \"data: \" prefix\n    .filter((line) => line !== \"\" && line !== \"[DONE]\") // Remove empty lines and \"[DONE]\"\n    .map((line) => {\n        try {\n            return JSON.parse(line)\n        } catch { }\n    }) // Parse the JSON string\n    .filter(Boolean);\n\nfor (const parsedLine of parsedLines) {\n    const { choices } = parsedLine;\n    const { delta } = choices[0];\n    const { content } = delta;\n    // Update the UI with the new content\n    if (content) {\n        resultTexts.push(content);\n    }\n}\nreturn resultTexts.join(\"\");",
+      "sanatization_response": "// catch error\nif (res.status >= 300) {\n  const err = data?.error?.message || JSON.stringify(data);\n  throw err;\n}\n\n// get choices\nconst choices = (data.choices || data).map(c=> c.message);\n\n// the return object should be in the format of \n// { content: string }[] \n// if there's only one response, put it in the array of choices.\nreturn choices;",
+      "frequency_penalty": 0,
+      "presence_penalty": 0.5,
+      "top_p": 1,
+      "streamable": true,
+      "CORSBypass": true
+    }
+  },
+  "LLMProviderOptionsKeysHashed": {}
+}
