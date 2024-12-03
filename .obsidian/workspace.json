@@ -4,59 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "9b54a981100eb0d1",
-        "type": "tabs",
+        "id": "1eaa97710e9a20d8",
+        "type": "split",
         "children": [
           {
-            "id": "7cdc4643e225079b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
+            "id": "fa9827fa00dfd2db",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "c2bf1727630f8b7f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "README.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "README"
+                }
+              }
+            ]
           },
           {
-            "id": "9640b6299b296dda",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "draft.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "draft"
-            }
+            "id": "4efe3a125630f5ea",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "11f4b54eaa7a288c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "README_EN.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "README_EN"
+                }
+              }
+            ]
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "693c95f167d864d1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9e8ba96c8286798e",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://kimi.moonshot.cn/"
-              },
-              "icon": "lucide-file",
-              "title": "Kimi.ai - 会推理解析，能深度思考的AI助手"
-            }
-          }
-        ]
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -196,7 +190,8 @@
               "title": "Copilot"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -222,54 +217,54 @@
       "copilot:Copilot Chat": false
     }
   },
-  "active": "9640b6299b296dda",
+  "active": "c2bf1727630f8b7f",
   "lastOpenFiles": [
-    "draft.md",
+    "README_EN.md",
     "README.md",
+    "_Workspace/Example-Summary.md",
+    "textgenerator/configs/llm/config_12-3194804.json.md",
+    "_Workspace/Example2-阅读知乎文章+做笔记.md",
+    "docs/AI Project View.md",
+    "docs/Kanban.md",
+    "docs/AI Plugins/Text Generator.md",
+    "textgenerator/configs/llm",
+    "textgenerator/configs",
+    "textgenerator",
+    "docs/AI Plugins/Smart2Brain.md",
+    "docs/attachment/Smart2Brian.png",
+    "docs/AI Plugins/Local GPT.md",
+    "docs/attachment/LocalGPT-Action-2.png",
+    "docs/attachment/localGPT-action-1.png",
+    "docs/AI Plugins/Copilot.md",
+    "docs/attachment/copilot-ollama-add-model.png",
+    "README - 副本.md",
+    "draft.md",
     "docs/attachment/img/OllamaTestllama3.2.png",
     "docs/attachment/img/查看LocalGPTAction.png",
     "docs/attachment/Pasted image 20241123182559.png",
     "docs/attachment/OllamaTestllama3.2.png",
-    "docs/AI Project View.md",
     "docs/BaseLLM/Kimi.md",
     "docs/attachment/img/Kimi-Textgenerator联动.png",
-    "README_EN.md",
     "_Workspace/copilot-conversations/Provide_three_follow-up_questions_worded_as_if_I'm_asking_you@20241123_172931.md",
     "_Workspace/copilot-conversations",
     "_Workspace/Chats/pobsidian_ai_workflow_summaryp.md",
     "_Workspace/Chats/New Chat.md",
     "docs/Git以及本地化.md",
     "docs/attachment/img/重建仓库缓存.png",
-    "docs/attachment/img/删去.git文件夹以及.gitignore.png",
     "docs/CSS & Typesetting.md",
-    "_Workspace/Example-Summary.md",
-    "docs/attachment/img/Copilot-SummarizeSelection.png",
-    "docs/attachment/img/Copilot-.png",
-    "_Workspace/Example2-阅读知乎文章+做笔记.md",
-    "docs/attachment/img/Second2Brain-Sidebar.png",
     "Example-Summary README.md",
-    "docs/AI Plugins/Local GPT.md",
-    "docs/AI Plugins/Smart2Brain.md",
-    "docs/AI Plugins/Text Generator.md",
-    "_Workspace/textgenerator/templates/default/getEmailPos.md",
-    "_Workspace/textgenerator/templates/default/getOutline.md",
-    "_Workspace/textgenerator/templates/default/summarize.md",
-    "_Workspace/textgenerator/templates/default/getIdeas.md",
-    "_Workspace/textgenerator/templates/default/getEmailNeg.md",
-    "_Workspace/textgenerator/templates/default/simplify.md",
-    "_Workspace/textgenerator/templates/default/getTitles.md",
-    "_Workspace/textgenerator/templates/default/rewrite.md",
-    "_Workspace/textgenerator/templates/default/getTags.md",
-    "_Workspace/textgenerator/templates/default/summarizeLarge.md",
-    "_Workspace/textgenerator/templates/default",
-    "_Workspace/textgenerator/templates",
-    "_Workspace/textgenerator",
+    "textgenerator/templates/default/getEmailPos.md",
+    "textgenerator/templates/default/getOutline.md",
+    "textgenerator/templates/default/summarize.md",
+    "textgenerator/templates/default/getIdeas.md",
+    "textgenerator/templates/default/getEmailNeg.md",
+    "textgenerator/templates/default/simplify.md",
+    "textgenerator/templates/default",
+    "textgenerator/templates",
+    "textgenerator 1",
     "_Workspace/Chats",
     "docs/attachment",
     "_Workspace",
-    "About/未命名",
-    "docs/attachment/img",
-    "docs/AI Plugins",
     "__PoliAI/Singapore/新加坡人力资源部 工签.canvas",
     "_Bussiness_Trading/线性代数习题册项目分析.canvas",
     "__PoliAI/构思场景.canvas",

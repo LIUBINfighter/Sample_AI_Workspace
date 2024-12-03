@@ -50,7 +50,7 @@
     "*.excalidraw.md"
   ],
   "isQuickSettingsOpen": true,
-  "isVerbose": false,
+  "isVerbose": true,
   "isOnboarded": true,
   "hideIncognitoWarning": false,
   "isAutostart": false

@@ -22,10 +22,16 @@ kanban-plugin: board
 - [ ] 看板插件：[Kanban](Kanban.md)
 
 
+## README
+
+- [ ] [README](../README.md)
+- [ ] [README_EN](../README_EN.md)
+
+
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false]}
 ```
 %%
