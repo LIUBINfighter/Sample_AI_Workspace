@@ -176,7 +176,7 @@ ollama list
 ollama run llama3.2
 ```
 
-![](docs/attachment/OllamaTestllama3.2.png)
+![](docs/attachment/img/OllamaTestllama3.2.png)
 
 如果响应很快，那么接下来接入插件的相应速度应该也不错。
 
