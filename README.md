@@ -105,6 +105,8 @@ To deploy Ollama, you can continue reading below at **[Quick Start](https://gith
 
 ## Kimi (No English ver yet)
 
+(You may regard it as a web-ChatGPT service)
+
 Kimi, with its powerful long-text capabilities, file uploading, and internet search capabilities (including a free context window of less than 200,000 characters), occupies a unique position in the C-end ecosystem (I can't live without Kimi anyway).
 
 Using the API in Obsidian in a conventional way would be a waste of its potential! But having two windows side by side is too troublesome. Can we use Kimi within Obsidian? We can use the [Surfing](Surfing.md) plugin to turn Obsidian into a browser. With the current settings in this repository, you should be able to directly open the following link in Obsidian: [kimi.moonshot](https://kimi.moonshot.cn/).
