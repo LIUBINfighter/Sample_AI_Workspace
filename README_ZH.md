@@ -1,4 +1,4 @@
-[README_EN](README_EN.md)
+[README_EN (English version)](README.md)
 
 这是我在南方科技大学24秋季学期，EBA203管理信息系统课程的个人AI项目。
 
